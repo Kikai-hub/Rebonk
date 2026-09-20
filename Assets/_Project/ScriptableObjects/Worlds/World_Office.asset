@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4a3f138723cde243abf5025753c4a26, type: 3}
+  m_Name: World_Office
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.WorldConfig
+  displayName: Office Hell
+  description: Endless meetings. This could have been an email.
+  previewSprite: {fileID: 21300000, guid: 15f246db9b323a44a8642b62693948f7, type: 3}
+  backgroundColor: {r: 0.34, g: 0.4, b: 0.55, a: 1}
+  groundTiles:
+  - {fileID: 21300000, guid: 4794ae8d7cb96f748ab9527348567a22, type: 3}
+  - {fileID: 21300000, guid: 84da9a12075bd764ba017430f815b51e, type: 3}
+  patchTiles:
+  - {fileID: 21300000, guid: d831869d19f7d0b409d2028e020e21d6, type: 3}
+  patchThreshold: 0.62
+  patchNoiseScale: 0.06
+  obstacles:
+  - sprite: {fileID: 21300000, guid: f1d31b87d02bad2479bf3811123e3c74, type: 3}
+    weight: 3
+    collisionRadius: 1
+    scale: 1
+  - sprite: {fileID: 21300000, guid: be2ff3359b870ed4990e76b5b80a2ac9, type: 3}
+    weight: 3
+    collisionRadius: 0.6
+    scale: 1
+  - sprite: {fileID: 21300000, guid: cff3d335acfd80e40a424a1074f0413d, type: 3}
+    weight: 2
+    collisionRadius: 0.8
+    scale: 1
+  obstacleAttemptsPerChunk: 14
+  obstacleGap: 1.4
+  decorations:
+  - sprite: {fileID: 21300000, guid: 52b7985180e42c44eb4ba94e3f44137c, type: 3}
+    weight: 4
+    collisionRadius: 0
+    scale: 1
+  - sprite: {fileID: 21300000, guid: 51407003ff8363b4a950ebd11795bd66, type: 3}
+    weight: 2
+    collisionRadius: 0
+    scale: 1
+  decorationsPerChunk: 18
+  enemies:
+  - prefab: {fileID: 7896551214276391109, guid: 22c0334fa1570c842a5c5bb92b0a68b5, type: 3}
+    data: {fileID: 11400000, guid: ad6bc0b41c7950847af1470ec5b00685, type: 2}
+    weight: 10
+    unlockMinute: 0
+    groupSize: 1
+  - prefab: {fileID: 7681633715892839310, guid: 9f52e213a64bea545971a4fff416d1ab, type: 3}
+    data: {fileID: 11400000, guid: 900a362b1040da6468ce8bc588d380c7, type: 2}
+    weight: 4
+    unlockMinute: 1
+    groupSize: 6
+  - prefab: {fileID: 8225912926565939223, guid: 047585b538a66ec4aa1a50b5977620e0, type: 3}
+    data: {fileID: 11400000, guid: afe8744cf8881234ba72db2addb8f61b, type: 2}
+    weight: 3
+    unlockMinute: 1.5
+    groupSize: 1
+  - prefab: {fileID: 1045181546506405453, guid: 4c2c6c208eb45ae4ba6a4eef847714cf, type: 3}
+    data: {fileID: 11400000, guid: f73f4b7160d8a3943853e6aa7db375ff, type: 2}
+    weight: 3
+    unlockMinute: 3
+    groupSize: 1
+  - prefab: {fileID: 715193033160323315, guid: 79fcffd717d8df1408ce863d31037e82, type: 3}
+    data: {fileID: 11400000, guid: f39081e9ffd438043a21ec39d5ecdf6d, type: 2}
+    weight: 2
+    unlockMinute: 4
+    groupSize: 1
+  zoneMusic: {fileID: 8300000, guid: c829a75466a61da4ea33700a68d2e497, type: 3}
+  survivalMusic: {fileID: 0}
+  bossMusic: {fileID: 0}
+  bossPrefab: {fileID: 7617523036460671398, guid: 16eb4629ece7b50419166b0e32c78d32, type: 3}
+  bossData: {fileID: 11400000, guid: e930653d7b6a6a34d873e999ef6f19c4, type: 2}
+  hpMultiplier: 1
+  damageMultiplier: 1.1

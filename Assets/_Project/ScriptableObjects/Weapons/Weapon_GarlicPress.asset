@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ace89b8d1ed1b8146bb90d63d7dfa8f3, type: 3}
+  m_Name: Weapon_GarlicPress
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.WeaponData
+  displayName: Garlic Press
+  description: Squeezes enemies on both sides.
+  icon: {fileID: 21300000, guid: 6899f582db4e1534fb11cd8a3760f80c, type: 3}
+  category: 0
+  weaponPrefab: {fileID: 3291665192576179988, guid: 2940bec98afc3a2429cba0a8766d0a4d, type: 3}
+  unlock:
+    id: weapon_garlic_press
+    unlockedByDefault: 0
+    type: 11
+    target: 12
+    boss: {fileID: 0}
+  levels:
+  - damage: 10
+    cooldown: 0.9
+    area: 2.4
+    speed: 10
+    amount: 1
+    pierce: 1
+    duration: 2
+    bounces: 0
+    upgradeText: 
+  - damage: 13
+    cooldown: 0.85
+    area: 2.57
+    speed: 10
+    amount: 1
+    pierce: 1
+    duration: 2.2
+    bounces: 0
+    upgradeText: More damage, a bit faster.
+  - damage: 16
+    cooldown: 0.79
+    area: 2.74
+    speed: 10
+    amount: 1
+    pierce: 1
+    duration: 2.4
+    bounces: 0
+    upgradeText: More damage, a bit faster.
+  - damage: 19
+    cooldown: 0.74
+    area: 2.9
+    speed: 10
+    amount: 1
+    pierce: 1
+    duration: 2.6
+    bounces: 0
+    upgradeText: More damage, a bit faster.
+  - damage: 22
+    cooldown: 0.68
+    area: 3.07
+    speed: 10
+    amount: 1
+    pierce: 1
+    duration: 2.8
+    bounces: 0
+    upgradeText: Maximum power.

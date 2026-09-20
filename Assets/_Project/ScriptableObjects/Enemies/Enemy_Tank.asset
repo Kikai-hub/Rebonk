@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dbb7d12a1b67bd44b1a6029ab35b773, type: 3}
+  m_Name: Enemy_Tank
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.EnemyData
+  displayName: Armored Muffin
+  behavior: 0
+  maxHp: 90
+  moveSpeed: 0.9
+  contactDamage: 12
+  contactRadius: 0.9
+  contactCooldown: 0.8
+  xpValue: 4
+  isSpirit: 0
+  preferredDistance: 6
+  shootInterval: 2.2
+  projectileSpeed: 5
+  projectileDamage: 6
+  projectileLifetime: 3
+  chargeTriggerRange: 7
+  chargeWindup: 0.8
+  chargeSpeed: 9
+  chargeDuration: 0.6
+  chargeCooldown: 3

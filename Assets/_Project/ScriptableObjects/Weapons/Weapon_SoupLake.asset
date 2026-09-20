@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ace89b8d1ed1b8146bb90d63d7dfa8f3, type: 3}
+  m_Name: Weapon_SoupLake
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.WeaponData
+  displayName: Soup Lake
+  description: 'EVOLVED Soup Puddle: giant scalding lakes.'
+  icon: {fileID: 21300000, guid: a018907bfc161e8449f5bb19d792b056, type: 3}
+  category: 0
+  weaponPrefab: {fileID: 1720472010391407193, guid: bd40544b790ab864ea03eabad1cc90d7, type: 3}
+  unlock:
+    id: 
+    unlockedByDefault: 1
+    type: 0
+    target: 100
+    boss: {fileID: 0}
+  levels:
+  - damage: 8
+    cooldown: 2
+    area: 3.2
+    speed: 0.4
+    amount: 3
+    pierce: 1
+    duration: 6
+    bounces: 0
+    upgradeText: 

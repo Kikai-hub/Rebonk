@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7b3bbad469fa0345b64467584754aaf, type: 3}
+  m_Name: SoundBank
+  m_EditorClassIdentifier: Rebonk.Core::Rebonk.Core.SoundBank
+  sfx:
+  - id: 0
+    clips:
+    - {fileID: 8300000, guid: c9c694fb74076eb49827703b3a60f248, type: 3}
+    volume: 0.8
+    pitchJitter: 0.03
+    minInterval: 0.08
+  - id: 1
+    clips:
+    - {fileID: 8300000, guid: 48212a9bae85dcb4098db0465d60ab2e, type: 3}
+    volume: 0.8
+    pitchJitter: 0.08
+    minInterval: 0.04
+  - id: 2
+    clips:
+    - {fileID: 8300000, guid: 9102c25478a9fff45b50d69e074404ff, type: 3}
+    volume: 0.35
+    pitchJitter: 0.08
+    minInterval: 0.06
+  - id: 3
+    clips:
+    - {fileID: 8300000, guid: 5e570d7ca13a56c49959e19de056bbd7, type: 3}
+    volume: 0.55
+    pitchJitter: 0.08
+    minInterval: 0.05
+  - id: 4
+    clips:
+    - {fileID: 8300000, guid: e87da92856784e941badb261f1a17a37, type: 3}
+    volume: 0.4
+    pitchJitter: 0.15
+    minInterval: 0.05
+  - id: 5
+    clips:
+    - {fileID: 8300000, guid: 6bbd68622cddc8341a593b3eba8fcb13, type: 3}
+    volume: 0.8
+    pitchJitter: 0
+    minInterval: 0.5
+  - id: 6
+    clips:
+    - {fileID: 8300000, guid: 503bc9c56a6024c4daea7f282300cb7c, type: 3}
+    volume: 0.45
+    pitchJitter: 0.08
+    minInterval: 0.07
+  - id: 7
+    clips:
+    - {fileID: 8300000, guid: f00a54b987a5b464a8e8a367d03ea6be, type: 3}
+    volume: 0.45
+    pitchJitter: 0.08
+    minInterval: 0.07
+  - id: 8
+    clips:
+    - {fileID: 8300000, guid: d158f4f6457819747847294efced7ad9, type: 3}
+    volume: 0.45
+    pitchJitter: 0.08
+    minInterval: 0.07
+  - id: 9
+    clips:
+    - {fileID: 8300000, guid: 61be0992755876541b2b853f7747f6c7, type: 3}
+    volume: 0.45
+    pitchJitter: 0.08
+    minInterval: 0.07
+  - id: 10
+    clips:
+    - {fileID: 8300000, guid: 1b3c07bd34635d8429ebae9b5b60ee2c, type: 3}
+    volume: 0.8
+    pitchJitter: 0
+    minInterval: 0.5
+  - id: 11
+    clips:
+    - {fileID: 8300000, guid: 88610097d115b2344af41bc4eb4f560c, type: 3}
+    volume: 0.8
+    pitchJitter: 0
+    minInterval: 0.5
+  - id: 12
+    clips:
+    - {fileID: 8300000, guid: 1cd1a535514980e4282a66f2337057b9, type: 3}
+    volume: 0.8
+    pitchJitter: 0
+    minInterval: 0.5
+  - id: 13
+    clips:
+    - {fileID: 8300000, guid: 4c3ed858dee5aa144b91afd38fc444f5, type: 3}
+    volume: 0.8
+    pitchJitter: 0
+    minInterval: 0.5
+  - id: 14
+    clips:
+    - {fileID: 8300000, guid: f8e4126c3967e314da8386d39f312ee9, type: 3}
+    volume: 0.8
+    pitchJitter: 0.08
+    minInterval: 0.04
+  - id: 15
+    clips:
+    - {fileID: 8300000, guid: 314cb099c9d4c9942adbc911efcc60a1, type: 3}
+    volume: 0.8
+    pitchJitter: 0
+    minInterval: 0.5
+  - id: 16
+    clips:
+    - {fileID: 8300000, guid: 6262e72d5d4a7a245ae78be75cab3cf1, type: 3}
+    volume: 0.8
+    pitchJitter: 0.08
+    minInterval: 0.04
+  - id: 17
+    clips:
+    - {fileID: 8300000, guid: b2d54878e1f74a646915851549d92c93, type: 3}
+    volume: 0.8
+    pitchJitter: 0.08
+    minInterval: 0.04
+  - id: 18
+    clips:
+    - {fileID: 8300000, guid: 47225ab3b47da6444a628277c10009e0, type: 3}
+    volume: 0.8
+    pitchJitter: 0
+    minInterval: 0.5
+  menuMusic: {fileID: 8300000, guid: 915cf7e8cc9177c46ad7bcfe0cfd82e5, type: 3}
+  defaultZoneMusic: {fileID: 8300000, guid: 206e755318e2c8a49a8de669cd39b012, type: 3}
+  survivalMusic: {fileID: 8300000, guid: c6718257b8d32714d8e02f9f1c23d37a, type: 3}
+  bossMusic: {fileID: 8300000, guid: f8de2888009f402478ef6bd99be6c8ed, type: 3}

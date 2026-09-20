@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92cf2b54f88eb6a4da294bdc98f3e356, type: 3}
+  m_Name: Character_FrisbeeFred
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.CharacterStats
+  displayName: Frisbee Fred
+  description: Surfs on a plate. Attacks 18% faster.
+  traitName: Quick Return
+  sprite: {fileID: 21300000, guid: cde7c7b54c90a4c498092bb36c1dfafc, type: 3}
+  unlock:
+    id: char_frisbee_fred
+    unlockedByDefault: 0
+    type: 3
+    target: 3
+    boss: {fileID: 0}
+  maxHp: 85
+  moveSpeed: 4.7
+  damageMultiplier: 1
+  pickupRadius: 2.2
+  startingWeapon: {fileID: 11400000, guid: deef7bc0a92be5e4aa0895c0ff45d3d7, type: 2}
+  extraStartingWeapons: []
+  randomStartWeapon: 0
+  attackSpeedBonus: 0.18
+  areaBonus: 0
+  regenPerSecond: 0
+  armor: 0
+  critChance: 0
+  xpMultiplier: 1
+  passivePower: 1
+  levelUpChoices: 3
+  spiritDamageMultiplier: 1
+  spiritGrowthMultiplier: 1
+  revives: 0

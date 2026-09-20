@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92cf2b54f88eb6a4da294bdc98f3e356, type: 3}
+  m_Name: Character_SirTomato
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.CharacterStats
+  displayName: Sir Tomato
+  description: Big, red and hard to squash. A little slow.
+  traitName: Sturdy
+  sprite: {fileID: 21300000, guid: 4689e499d8142754689b3eb5598c6673, type: 3}
+  unlock:
+    id: char_sir_tomato
+    unlockedByDefault: 0
+    type: 4
+    target: 120
+    boss: {fileID: 0}
+  maxHp: 160
+  moveSpeed: 3.4
+  damageMultiplier: 1.1
+  pickupRadius: 1.8
+  startingWeapon: {fileID: 11400000, guid: 20a28a45f6b03ad45a0ecab8659e4be7, type: 2}
+  extraStartingWeapons: []
+  randomStartWeapon: 0
+  attackSpeedBonus: 0
+  areaBonus: 0
+  regenPerSecond: 0
+  armor: 0
+  critChance: 0
+  xpMultiplier: 1
+  passivePower: 1
+  levelUpChoices: 3
+  spiritDamageMultiplier: 1
+  spiritGrowthMultiplier: 1
+  revives: 0

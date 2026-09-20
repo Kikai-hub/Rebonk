@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ace89b8d1ed1b8146bb90d63d7dfa8f3, type: 3}
+  m_Name: Weapon_NoodleDart
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.WeaponData
+  displayName: Noodle Dart
+  description: Bounces between enemies.
+  icon: {fileID: 21300000, guid: b621046526c2c524c8581d8c6ca60cc5, type: 3}
+  category: 1
+  weaponPrefab: {fileID: 4213260449489186435, guid: f82829ab183466546bf4814b5b410c92, type: 3}
+  unlock:
+    id: weapon_noodle_dart
+    unlockedByDefault: 0
+    type: 6
+    target: 10
+    boss: {fileID: 0}
+  levels:
+  - damage: 7
+    cooldown: 0.8
+    area: 2
+    speed: 13
+    amount: 1
+    pierce: 1
+    duration: 2
+    bounces: 2
+    upgradeText: 
+  - damage: 9.1
+    cooldown: 0.75
+    area: 2.14
+    speed: 13.5
+    amount: 1
+    pierce: 1
+    duration: 2.2
+    bounces: 2
+    upgradeText: More damage, a bit faster.
+  - damage: 11.2
+    cooldown: 0.7
+    area: 2.28
+    speed: 14
+    amount: 1
+    pierce: 1
+    duration: 2.4
+    bounces: 3
+    upgradeText: +1 bounce. More damage, a bit faster.
+  - damage: 13.3
+    cooldown: 0.66
+    area: 2.42
+    speed: 14.6
+    amount: 1
+    pierce: 1
+    duration: 2.6
+    bounces: 3
+    upgradeText: More damage, a bit faster.
+  - damage: 15.4
+    cooldown: 0.61
+    area: 2.56
+    speed: 15.1
+    amount: 1
+    pierce: 1
+    duration: 2.8
+    bounces: 4
+    upgradeText: +1 bounce. Maximum power.

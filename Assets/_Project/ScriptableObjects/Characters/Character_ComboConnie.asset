@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92cf2b54f88eb6a4da294bdc98f3e356, type: 3}
+  m_Name: Character_ComboConnie
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.CharacterStats
+  displayName: Combo Connie
+  description: A juggling chef who starts with two weapons.
+  traitName: Double Trouble
+  sprite: {fileID: 21300000, guid: cf2becadfe6862a45a33352b2126621c, type: 3}
+  unlock:
+    id: char_combo_connie
+    unlockedByDefault: 0
+    type: 0
+    target: 5000
+    boss: {fileID: 0}
+  maxHp: 70
+  moveSpeed: 4.3
+  damageMultiplier: 1
+  pickupRadius: 2
+  startingWeapon: {fileID: 11400000, guid: 886432055fe9f4c459980781abf8b527, type: 2}
+  extraStartingWeapons:
+  - {fileID: 11400000, guid: 6007a6764f9b50f4fbf0309348b9fd41, type: 2}
+  randomStartWeapon: 0
+  attackSpeedBonus: 0
+  areaBonus: 0
+  regenPerSecond: 0
+  armor: 0
+  critChance: 0
+  xpMultiplier: 1
+  passivePower: 1
+  levelUpChoices: 3
+  spiritDamageMultiplier: 1
+  spiritGrowthMultiplier: 1
+  revives: 0

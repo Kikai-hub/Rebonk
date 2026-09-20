@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18fd5e336240ed34bb83e30ebe634c03, type: 3}
+  m_Name: Passive_OverclockOvenGuide
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.PassiveData
+  displayName: Overclock Oven Guide
+  description: +12% attack speed, -5% area.
+  icon: {fileID: 21300000, guid: 5e84eb511df024c4f8830c8f021479ae, type: 3}
+  stat: 4
+  valuePerLevel: 0.12
+  hasSecondStat: 1
+  stat2: 12
+  valuePerLevel2: -0.05
+  maxLevel: 5

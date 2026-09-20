@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92cf2b54f88eb6a4da294bdc98f3e356, type: 3}
+  m_Name: Character_DrDumpling
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.CharacterStats
+  displayName: Dr. Dumpling
+  description: A dumpling in a lab coat. His weapons cover more ground.
+  traitName: Big Steam
+  sprite: {fileID: 21300000, guid: 0996634dd524d494b80ce33488aa53d2, type: 3}
+  unlock:
+    id: char_dr_dumpling
+    unlockedByDefault: 0
+    type: 6
+    target: 15
+    boss: {fileID: 0}
+  maxHp: 90
+  moveSpeed: 4
+  damageMultiplier: 1
+  pickupRadius: 2
+  startingWeapon: {fileID: 11400000, guid: 7a9f53cd189e883419c120a9eba007cd, type: 2}
+  extraStartingWeapons: []
+  randomStartWeapon: 0
+  attackSpeedBonus: 0
+  areaBonus: 0.25
+  regenPerSecond: 0
+  armor: 0
+  critChance: 0
+  xpMultiplier: 1
+  passivePower: 1
+  levelUpChoices: 3
+  spiritDamageMultiplier: 1
+  spiritGrowthMultiplier: 1
+  revives: 0

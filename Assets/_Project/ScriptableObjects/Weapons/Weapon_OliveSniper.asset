@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ace89b8d1ed1b8146bb90d63d7dfa8f3, type: 3}
+  m_Name: Weapon_OliveSniper
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.WeaponData
+  displayName: Olive Sniper
+  description: Fast, precise, pierces two.
+  icon: {fileID: 21300000, guid: a8450874b5d8f9d418ba632ee8793009, type: 3}
+  category: 1
+  weaponPrefab: {fileID: 4840571222058174945, guid: ccd5df539f9bacd48bd9f0e0650760aa, type: 3}
+  unlock:
+    id: weapon_olive_sniper
+    unlockedByDefault: 0
+    type: 0
+    target: 4000
+    boss: {fileID: 0}
+  levels:
+  - damage: 26
+    cooldown: 1.9
+    area: 2
+    speed: 22
+    amount: 1
+    pierce: 2
+    duration: 2
+    bounces: 0
+    upgradeText: 
+  - damage: 33.8
+    cooldown: 1.79
+    area: 2.14
+    speed: 22.9
+    amount: 1
+    pierce: 2
+    duration: 2.2
+    bounces: 0
+    upgradeText: More damage, a bit faster.
+  - damage: 41.6
+    cooldown: 1.67
+    area: 2.28
+    speed: 23.8
+    amount: 1
+    pierce: 2
+    duration: 2.4
+    bounces: 0
+    upgradeText: More damage, a bit faster.
+  - damage: 49.4
+    cooldown: 1.56
+    area: 2.42
+    speed: 24.6
+    amount: 1
+    pierce: 2
+    duration: 2.6
+    bounces: 0
+    upgradeText: More damage, a bit faster.
+  - damage: 57.2
+    cooldown: 1.44
+    area: 2.56
+    speed: 25.5
+    amount: 1
+    pierce: 2
+    duration: 2.8
+    bounces: 0
+    upgradeText: Maximum power.

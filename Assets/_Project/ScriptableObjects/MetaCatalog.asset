@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 968834310563dd14eb94646199c99111, type: 3}
+  m_Name: MetaCatalog
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.MetaCatalog
+  characters:
+  - {fileID: 11400000, guid: 3329f0aec50c0ae43aa800225573e269, type: 2}
+  - {fileID: 11400000, guid: 5f6b3d1de0a847c449e2d9ee76482311, type: 2}
+  - {fileID: 11400000, guid: 8471c47750503444e8da50e501177b90, type: 2}
+  - {fileID: 11400000, guid: 20e2c4a40ec55084d8d542a722bbaa15, type: 2}
+  - {fileID: 11400000, guid: eab11405d5447c64cacffe1f8a8bab47, type: 2}
+  - {fileID: 11400000, guid: b351b7466903b1347ab5ccd53ccf34a7, type: 2}
+  - {fileID: 11400000, guid: 2d3aff50563f0ce488a48c45673cbc79, type: 2}
+  - {fileID: 11400000, guid: f3148e5a1831b7f45a51202e3d2dd5b9, type: 2}
+  - {fileID: 11400000, guid: 63128d52d4c05df47a2cf90a04a981c3, type: 2}
+  - {fileID: 11400000, guid: c9861ef6cd8f2bf4986e79dcc66b1cda, type: 2}
+  - {fileID: 11400000, guid: bf1b576c17cdc2546a77cc42a0a5a499, type: 2}
+  - {fileID: 11400000, guid: 807054de00bc4d64eaef749b057c8493, type: 2}
+  - {fileID: 11400000, guid: 65d3ec80ab0928f4e9f441dda7f1d8ea, type: 2}
+  - {fileID: 11400000, guid: 6cbaefa276e93c441ac0ae3475f37443, type: 2}
+  - {fileID: 11400000, guid: 1d3937ea64f0c394b86c66a2cb4526f4, type: 2}
+  - {fileID: 11400000, guid: 44b0944828126fc4e888e6a539c71fff, type: 2}
+  - {fileID: 11400000, guid: 9afd183253e00ce468208e9eaf53a873, type: 2}
+  - {fileID: 11400000, guid: 6de64383bac0c4943b3c803f69324063, type: 2}
+  - {fileID: 11400000, guid: 8f9154c6dfacf7a4e8a5adb2ab06edb0, type: 2}
+  - {fileID: 11400000, guid: d20d619e176e5654ba5ae0222b463b22, type: 2}
+  pool: {fileID: 11400000, guid: d4cf4848c2b8dc04381d64af68ad7b10, type: 2}

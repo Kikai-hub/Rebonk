@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ace89b8d1ed1b8146bb90d63d7dfa8f3, type: 3}
+  m_Name: Weapon_StrawBlowpipe
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.WeaponData
+  displayName: Straw Blowpipe
+  description: Needle-fast shots that pierce.
+  icon: {fileID: 21300000, guid: 7d6554c575c3a134a840a37c63ad6edf, type: 3}
+  category: 1
+  weaponPrefab: {fileID: 6209095247384883760, guid: 27f76d01f92d85a49a7595ca356e4f9a, type: 3}
+  unlock:
+    id: weapon_straw_blowpipe
+    unlockedByDefault: 0
+    type: 0
+    target: 400
+    boss: {fileID: 0}
+  levels:
+  - damage: 4
+    cooldown: 0.3
+    area: 2
+    speed: 18
+    amount: 1
+    pierce: 3
+    duration: 2
+    bounces: 0
+    upgradeText: 
+  - damage: 5.2
+    cooldown: 0.28
+    area: 2.14
+    speed: 18.7
+    amount: 1
+    pierce: 3
+    duration: 2.2
+    bounces: 0
+    upgradeText: More damage, a bit faster.
+  - damage: 6.4
+    cooldown: 0.26
+    area: 2.28
+    speed: 19.4
+    amount: 1
+    pierce: 4
+    duration: 2.4
+    bounces: 0
+    upgradeText: Pierces one more. More damage, a bit faster.
+  - damage: 7.6
+    cooldown: 0.25
+    area: 2.42
+    speed: 20.2
+    amount: 1
+    pierce: 4
+    duration: 2.6
+    bounces: 0
+    upgradeText: More damage, a bit faster.
+  - damage: 8.8
+    cooldown: 0.23
+    area: 2.56
+    speed: 20.9
+    amount: 1
+    pierce: 5
+    duration: 2.8
+    bounces: 0
+    upgradeText: Pierces one more. Maximum power.

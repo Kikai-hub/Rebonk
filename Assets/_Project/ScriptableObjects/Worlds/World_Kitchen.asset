@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4a3f138723cde243abf5025753c4a26, type: 3}
+  m_Name: World_Kitchen
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.WorldConfig
+  displayName: Giant Kitchen
+  description: Crumbs, jars and angry toast. Something big is baking...
+  previewSprite: {fileID: 21300000, guid: a29ccb59e3ac4a742a8d84038ec4ab12, type: 3}
+  backgroundColor: {r: 0.93, g: 0.87, b: 0.72, a: 1}
+  groundTiles:
+  - {fileID: 21300000, guid: 84a69b437cecb124690d92aca78195e6, type: 3}
+  - {fileID: 21300000, guid: e140f44c1d0c17c40956ad00439d2fda, type: 3}
+  patchTiles:
+  - {fileID: 21300000, guid: 0ba0c7aa6aea9d94b97074df613e201f, type: 3}
+  patchThreshold: 0.62
+  patchNoiseScale: 0.06
+  obstacles:
+  - sprite: {fileID: 21300000, guid: e9ac9959473ae414f82f806f27d68424, type: 3}
+    weight: 3
+    collisionRadius: 0.75
+    scale: 1
+  - sprite: {fileID: 21300000, guid: 2cc0245078253b04780f86287d134ada, type: 3}
+    weight: 2
+    collisionRadius: 1
+    scale: 1
+  obstacleAttemptsPerChunk: 14
+  obstacleGap: 1.4
+  decorations:
+  - sprite: {fileID: 21300000, guid: 759c4ec7b002a8d409f8512129f0967c, type: 3}
+    weight: 4
+    collisionRadius: 0
+    scale: 1
+  - sprite: {fileID: 21300000, guid: 3f1f64470d48d7148baa693d4648a593, type: 3}
+    weight: 1
+    collisionRadius: 0
+    scale: 1
+  decorationsPerChunk: 18
+  enemies:
+  - prefab: {fileID: 5224506341066731737, guid: 7fe1f22b84aa5e84e87398b1db217573, type: 3}
+    data: {fileID: 11400000, guid: fccdf37e87860884397a2c03d7178ed4, type: 2}
+    weight: 10
+    unlockMinute: 0
+    groupSize: 1
+  - prefab: {fileID: 3529610244957993189, guid: 08c8eafce11976d45a858ac76d945506, type: 3}
+    data: {fileID: 11400000, guid: c5ef2e2ea88b4164d9aab6d05cdc08d0, type: 2}
+    weight: 4
+    unlockMinute: 1
+    groupSize: 5
+  - prefab: {fileID: 4962412834496956014, guid: 9c00f3a06fcfa4b4091fa6196358a0b5, type: 3}
+    data: {fileID: 11400000, guid: 39cad5b82db50144ba0f88030ea21e17, type: 2}
+    weight: 3
+    unlockMinute: 2.5
+    groupSize: 1
+  - prefab: {fileID: 5946855777882574340, guid: ab06d468972a3074794683e485fb4064, type: 3}
+    data: {fileID: 11400000, guid: 27e62744fd0b46a49af217ac9b475987, type: 2}
+    weight: 3
+    unlockMinute: 3
+    groupSize: 1
+  - prefab: {fileID: 3727790262396942337, guid: a0fbf61a726a13743b0940c135d44ce9, type: 3}
+    data: {fileID: 11400000, guid: 4abc7d7d719d988498c16c6679a30df9, type: 2}
+    weight: 2
+    unlockMinute: 4
+    groupSize: 1
+  zoneMusic: {fileID: 8300000, guid: 206e755318e2c8a49a8de669cd39b012, type: 3}
+  survivalMusic: {fileID: 0}
+  bossMusic: {fileID: 0}
+  bossPrefab: {fileID: 7617523036460671398, guid: c1391685113f6894dbc7fb40fba2f91d, type: 3}
+  bossData: {fileID: 11400000, guid: 60bfbd7c16082d34bb5c0d87361dc2fb, type: 2}
+  hpMultiplier: 1
+  damageMultiplier: 1

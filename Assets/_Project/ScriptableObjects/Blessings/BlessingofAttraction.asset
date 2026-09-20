@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cd133b9813d7e34d8593e72361292dc, type: 3}
+  m_Name: BlessingofAttraction
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.BlessingData
+  displayName: Blessing of Attraction
+  description: +25% pickup radius.
+  icon: {fileID: 21300000, guid: 8e39e1d0800426a4984c3fa39a8a5fb5, type: 3}
+  stat: 3
+  value: 0.25

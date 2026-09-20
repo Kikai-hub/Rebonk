@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ace89b8d1ed1b8146bb90d63d7dfa8f3, type: 3}
+  m_Name: Weapon_SausageRocket
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.WeaponData
+  displayName: Sausage Rocket
+  description: Slow, heavy, punches through.
+  icon: {fileID: 21300000, guid: c3a6ddd777e618e48952c47347479b8b, type: 3}
+  category: 1
+  weaponPrefab: {fileID: 8065243841958970920, guid: 4b60a0dc37a02e94cb89781835fbe213, type: 3}
+  unlock:
+    id: weapon_sausage_rocket
+    unlockedByDefault: 0
+    type: 3
+    target: 3
+    boss: {fileID: 0}
+  levels:
+  - damage: 22
+    cooldown: 1.6
+    area: 2
+    speed: 8
+    amount: 1
+    pierce: 3
+    duration: 2
+    bounces: 0
+    upgradeText: 
+  - damage: 28.6
+    cooldown: 1.5
+    area: 2.14
+    speed: 8.3
+    amount: 1
+    pierce: 3
+    duration: 2.2
+    bounces: 0
+    upgradeText: More damage, a bit faster.
+  - damage: 35.2
+    cooldown: 1.41
+    area: 2.28
+    speed: 8.6
+    amount: 1
+    pierce: 4
+    duration: 2.4
+    bounces: 0
+    upgradeText: Pierces one more. More damage, a bit faster.
+  - damage: 41.8
+    cooldown: 1.31
+    area: 2.42
+    speed: 9
+    amount: 1
+    pierce: 4
+    duration: 2.6
+    bounces: 0
+    upgradeText: More damage, a bit faster.
+  - damage: 48.4
+    cooldown: 1.22
+    area: 2.56
+    speed: 9.3
+    amount: 1
+    pierce: 5
+    duration: 2.8
+    bounces: 0
+    upgradeText: Pierces one more. Maximum power.

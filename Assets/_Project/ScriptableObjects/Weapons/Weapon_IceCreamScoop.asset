@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ace89b8d1ed1b8146bb90d63d7dfa8f3, type: 3}
+  m_Name: Weapon_IceCreamScoop
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.WeaponData
+  displayName: Ice Cream Scoop
+  description: Scoops a big piece out of a group.
+  icon: {fileID: 21300000, guid: 414dce8b500ec1449b6365cad2d3e5bf, type: 3}
+  category: 0
+  weaponPrefab: {fileID: 909369625309365771, guid: 26536832c62a0424faa76f177023814b, type: 3}
+  unlock:
+    id: weapon_ice_cream_scoop
+    unlockedByDefault: 0
+    type: 3
+    target: 1
+    boss: {fileID: 0}
+  levels:
+  - damage: 12
+    cooldown: 0.8
+    area: 2.6
+    speed: 10
+    amount: 1
+    pierce: 1
+    duration: 2
+    bounces: 0
+    upgradeText: 
+  - damage: 15.6
+    cooldown: 0.75
+    area: 2.78
+    speed: 10
+    amount: 1
+    pierce: 1
+    duration: 2.2
+    bounces: 0
+    upgradeText: More damage, a bit faster.
+  - damage: 19.2
+    cooldown: 0.7
+    area: 2.96
+    speed: 10
+    amount: 1
+    pierce: 1
+    duration: 2.4
+    bounces: 0
+    upgradeText: More damage, a bit faster.
+  - damage: 22.8
+    cooldown: 0.66
+    area: 3.15
+    speed: 10
+    amount: 1
+    pierce: 1
+    duration: 2.6
+    bounces: 0
+    upgradeText: More damage, a bit faster.
+  - damage: 26.4
+    cooldown: 0.61
+    area: 3.33
+    speed: 10
+    amount: 1
+    pierce: 1
+    duration: 2.8
+    bounces: 0
+    upgradeText: Maximum power.

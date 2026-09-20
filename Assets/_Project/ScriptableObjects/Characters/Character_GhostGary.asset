@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92cf2b54f88eb6a4da294bdc98f3e356, type: 3}
+  m_Name: Character_GhostGary
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.CharacterStats
+  displayName: Ghost Gary
+  description: 'The spirits like him: they hit 30% softer and grow stronger more
+    slowly.'
+  traitName: Friendly Fire
+  sprite: {fileID: 21300000, guid: 03ad95bb8f218b4449ac0945babe1934, type: 3}
+  unlock:
+    id: char_ghost_gary
+    unlockedByDefault: 0
+    type: 4
+    target: 360
+    boss: {fileID: 0}
+  maxHp: 90
+  moveSpeed: 4.4
+  damageMultiplier: 1
+  pickupRadius: 2.2
+  startingWeapon: {fileID: 11400000, guid: a3d652d8a2851b644aa52f0a9ca286f6, type: 2}
+  extraStartingWeapons: []
+  randomStartWeapon: 0
+  attackSpeedBonus: 0
+  areaBonus: 0
+  regenPerSecond: 0
+  armor: 0
+  critChance: 0
+  xpMultiplier: 1
+  passivePower: 1
+  levelUpChoices: 3
+  spiritDamageMultiplier: 0.7
+  spiritGrowthMultiplier: 0.7
+  revives: 0

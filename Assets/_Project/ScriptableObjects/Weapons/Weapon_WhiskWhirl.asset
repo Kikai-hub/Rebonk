@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ace89b8d1ed1b8146bb90d63d7dfa8f3, type: 3}
+  m_Name: Weapon_WhiskWhirl
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.WeaponData
+  displayName: Whisk Whirl
+  description: A blur of whisking all around you.
+  icon: {fileID: 21300000, guid: 59d8f217da37acb44a57aa6484d921fc, type: 3}
+  category: 0
+  weaponPrefab: {fileID: 4705002979443229754, guid: c2f640b1c3cf91645933a7b2f8e0081b, type: 3}
+  unlock:
+    id: weapon_whisk_whirl
+    unlockedByDefault: 0
+    type: 0
+    target: 250
+    boss: {fileID: 0}
+  levels:
+  - damage: 6
+    cooldown: 0.55
+    area: 1.7
+    speed: 10
+    amount: 1
+    pierce: 1
+    duration: 2
+    bounces: 0
+    upgradeText: 
+  - damage: 7.8
+    cooldown: 0.52
+    area: 1.82
+    speed: 10
+    amount: 1
+    pierce: 1
+    duration: 2.2
+    bounces: 0
+    upgradeText: More damage, a bit faster.
+  - damage: 9.6
+    cooldown: 0.48
+    area: 1.94
+    speed: 10
+    amount: 1
+    pierce: 1
+    duration: 2.4
+    bounces: 0
+    upgradeText: More damage, a bit faster.
+  - damage: 11.4
+    cooldown: 0.45
+    area: 2.06
+    speed: 10
+    amount: 1
+    pierce: 1
+    duration: 2.6
+    bounces: 0
+    upgradeText: More damage, a bit faster.
+  - damage: 13.2
+    cooldown: 0.42
+    area: 2.18
+    speed: 10
+    amount: 1
+    pierce: 1
+    duration: 2.8
+    bounces: 0
+    upgradeText: Maximum power.

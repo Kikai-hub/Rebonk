@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ace89b8d1ed1b8146bb90d63d7dfa8f3, type: 3}
+  m_Name: Weapon_Peashooter
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.WeaponData
+  displayName: Peashooter
+  description: Rapid green peas.
+  icon: {fileID: 21300000, guid: 861082a4c3d72b548b2043e5b707c738, type: 3}
+  category: 1
+  weaponPrefab: {fileID: 3553372355358261168, guid: 414e739678b960c459b775f90c4b8b3f, type: 3}
+  unlock:
+    id: weapon_peashooter
+    unlockedByDefault: 0
+    type: 1
+    target: 1
+    boss: {fileID: 0}
+  levels:
+  - damage: 3
+    cooldown: 0.4
+    area: 2
+    speed: 14
+    amount: 1
+    pierce: 1
+    duration: 2
+    bounces: 0
+    upgradeText: 
+  - damage: 3.9
+    cooldown: 0.38
+    area: 2.14
+    speed: 14.6
+    amount: 1
+    pierce: 1
+    duration: 2.2
+    bounces: 0
+    upgradeText: More damage, a bit faster.
+  - damage: 4.8
+    cooldown: 0.35
+    area: 2.28
+    speed: 15.1
+    amount: 2
+    pierce: 1
+    duration: 2.4
+    bounces: 0
+    upgradeText: +1 projectile. More damage, a bit faster.
+  - damage: 5.7
+    cooldown: 0.33
+    area: 2.42
+    speed: 15.7
+    amount: 2
+    pierce: 1
+    duration: 2.6
+    bounces: 0
+    upgradeText: More damage, a bit faster.
+  - damage: 6.6
+    cooldown: 0.3
+    area: 2.56
+    speed: 16.2
+    amount: 3
+    pierce: 1
+    duration: 2.8
+    bounces: 0
+    upgradeText: +1 projectile. Maximum power.

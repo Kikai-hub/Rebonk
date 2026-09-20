@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ace89b8d1ed1b8146bb90d63d7dfa8f3, type: 3}
+  m_Name: Weapon_CheeseWheelRoll
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.WeaponData
+  displayName: Cheese Wheel Roll
+  description: A huge wheel rolling through the crowd.
+  icon: {fileID: 21300000, guid: 73618bfcb9115744980516c93479ec40, type: 3}
+  category: 1
+  weaponPrefab: {fileID: 4358347607816414660, guid: 2e697f2f7c228b34fa437e8f7b4fda8b, type: 3}
+  unlock:
+    id: weapon_cheese_wheel_roll
+    unlockedByDefault: 0
+    type: 4
+    target: 300
+    boss: {fileID: 0}
+  levels:
+  - damage: 18.2
+    cooldown: 2.2
+    area: 2
+    speed: 5
+    amount: 1
+    pierce: 6
+    duration: 2
+    bounces: 0
+    upgradeText: 
+  - damage: 23.7
+    cooldown: 2.07
+    area: 2.14
+    speed: 5.2
+    amount: 1
+    pierce: 6
+    duration: 2.2
+    bounces: 0
+    upgradeText: More damage, a bit faster.
+  - damage: 29.1
+    cooldown: 1.94
+    area: 2.28
+    speed: 5.4
+    amount: 1
+    pierce: 7
+    duration: 2.4
+    bounces: 0
+    upgradeText: Pierces one more. More damage, a bit faster.
+  - damage: 34.6
+    cooldown: 1.8
+    area: 2.42
+    speed: 5.6
+    amount: 1
+    pierce: 7
+    duration: 2.6
+    bounces: 0
+    upgradeText: More damage, a bit faster.
+  - damage: 40
+    cooldown: 1.67
+    area: 2.56
+    speed: 5.8
+    amount: 1
+    pierce: 8
+    duration: 2.8
+    bounces: 0
+    upgradeText: Pierces one more. Maximum power.

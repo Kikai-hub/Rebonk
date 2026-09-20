@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92cf2b54f88eb6a4da294bdc98f3e356, type: 3}
+  m_Name: Character_SushiSamurai
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.CharacterStats
+  displayName: Sushi Samurai
+  description: 'Fragile but blindingly fast: attacks 30% faster.'
+  traitName: Blade Dance
+  sprite: {fileID: 21300000, guid: 61539d659babf8a479f2b031011d5d35, type: 3}
+  unlock:
+    id: char_sushi_samurai
+    unlockedByDefault: 0
+    type: 2
+    target: 400
+    boss: {fileID: 0}
+  maxHp: 70
+  moveSpeed: 5
+  damageMultiplier: 0.9
+  pickupRadius: 2
+  startingWeapon: {fileID: 11400000, guid: 5a03c52e770427f41b107939ad80cefc, type: 2}
+  extraStartingWeapons: []
+  randomStartWeapon: 0
+  attackSpeedBonus: 0.3
+  areaBonus: 0
+  regenPerSecond: 0
+  armor: 0
+  critChance: 0
+  xpMultiplier: 1
+  passivePower: 1
+  levelUpChoices: 3
+  spiritDamageMultiplier: 1
+  spiritGrowthMultiplier: 1
+  revives: 0

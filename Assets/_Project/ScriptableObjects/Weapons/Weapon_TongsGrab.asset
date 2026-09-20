@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ace89b8d1ed1b8146bb90d63d7dfa8f3, type: 3}
+  m_Name: Weapon_TongsGrab
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.WeaponData
+  displayName: Tongs Grab
+  description: Pinches whatever is in reach.
+  icon: {fileID: 21300000, guid: e3e9b4f9fd2b9dc42b75b60956eabf73, type: 3}
+  category: 0
+  weaponPrefab: {fileID: 459935341102356153, guid: f2bdec3da5b161b47889f942ec95ef05, type: 3}
+  unlock:
+    id: weapon_tongs_grab
+    unlockedByDefault: 0
+    type: 0
+    target: 2500
+    boss: {fileID: 0}
+  levels:
+  - damage: 14
+    cooldown: 1
+    area: 2.8
+    speed: 10
+    amount: 1
+    pierce: 1
+    duration: 2
+    bounces: 0
+    upgradeText: 
+  - damage: 18.2
+    cooldown: 0.94
+    area: 3
+    speed: 10
+    amount: 1
+    pierce: 1
+    duration: 2.2
+    bounces: 0
+    upgradeText: More damage, a bit faster.
+  - damage: 22.4
+    cooldown: 0.88
+    area: 3.19
+    speed: 10
+    amount: 1
+    pierce: 1
+    duration: 2.4
+    bounces: 0
+    upgradeText: More damage, a bit faster.
+  - damage: 26.6
+    cooldown: 0.82
+    area: 3.39
+    speed: 10
+    amount: 1
+    pierce: 1
+    duration: 2.6
+    bounces: 0
+    upgradeText: More damage, a bit faster.
+  - damage: 30.8
+    cooldown: 0.76
+    area: 3.58
+    speed: 10
+    amount: 1
+    pierce: 1
+    duration: 2.8
+    bounces: 0
+    upgradeText: Maximum power.

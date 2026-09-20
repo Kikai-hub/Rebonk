@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4a3f138723cde243abf5025753c4a26, type: 3}
+  m_Name: World_Graveyard
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.WorldConfig
+  displayName: Joke Graveyard
+  description: The dead are not laughing. Dodge the punchlines.
+  previewSprite: {fileID: 21300000, guid: de72dcde3e1c998448a3a1fca2621ff0, type: 3}
+  backgroundColor: {r: 0.2, g: 0.3, b: 0.2, a: 1}
+  groundTiles:
+  - {fileID: 21300000, guid: 0e4d1242bb154814f9618d45e4e0790c, type: 3}
+  - {fileID: 21300000, guid: 464f5ddf50346664ebedf10f015bdb17, type: 3}
+  patchTiles:
+  - {fileID: 21300000, guid: c7e4e16cbf01a7d45ad701df93b7f03b, type: 3}
+  patchThreshold: 0.62
+  patchNoiseScale: 0.06
+  obstacles:
+  - sprite: {fileID: 21300000, guid: 1bceb7a828a09b84198b8e84a21743dc, type: 3}
+    weight: 4
+    collisionRadius: 0.7
+    scale: 1
+  - sprite: {fileID: 21300000, guid: 7e8bc3ded92a1b24d95dfeb3349b1095, type: 3}
+    weight: 2
+    collisionRadius: 0.5
+    scale: 1
+  obstacleAttemptsPerChunk: 14
+  obstacleGap: 1.4
+  decorations:
+  - sprite: {fileID: 21300000, guid: f2d0afddfadf0d147820f10c40cb1893, type: 3}
+    weight: 2
+    collisionRadius: 0
+    scale: 1
+  - sprite: {fileID: 21300000, guid: e14f68069d5672048a4601a360407f4c, type: 3}
+    weight: 4
+    collisionRadius: 0
+    scale: 1
+  decorationsPerChunk: 18
+  enemies:
+  - prefab: {fileID: 4930655930804725760, guid: 428de02267239b7478ec52e99c2eb785, type: 3}
+    data: {fileID: 11400000, guid: 40ea153c4ca017347b5d480bd40efa48, type: 2}
+    weight: 10
+    unlockMinute: 0
+    groupSize: 1
+  - prefab: {fileID: 3197521920307104825, guid: e07dd6a2c2f7ac44daaf2be41e42ef45, type: 3}
+    data: {fileID: 11400000, guid: 741fa4fdcc1feab4eb5d7995374df903, type: 2}
+    weight: 4
+    unlockMinute: 0.5
+    groupSize: 6
+  - prefab: {fileID: 592725851458786069, guid: 54dfb328c5a7f8545bd15691e17536e7, type: 3}
+    data: {fileID: 11400000, guid: cc14b67c972de524dbf00efa283e927a, type: 2}
+    weight: 3
+    unlockMinute: 2
+    groupSize: 1
+  - prefab: {fileID: 8790114232118438655, guid: 9990fea4924e67c4fb7a9e838e031a7f, type: 3}
+    data: {fileID: 11400000, guid: adc38f44d44c16246bce5081d690e0ef, type: 2}
+    weight: 3
+    unlockMinute: 2.5
+    groupSize: 1
+  - prefab: {fileID: 3536074927445928842, guid: f784de6cc12b81c40b8b0a46d350905b, type: 3}
+    data: {fileID: 11400000, guid: 1b3742ef662534347b4003d0298d7f15, type: 2}
+    weight: 2
+    unlockMinute: 3.5
+    groupSize: 1
+  zoneMusic: {fileID: 8300000, guid: 1e228481103934d4dbbf0c02b2885ab8, type: 3}
+  survivalMusic: {fileID: 0}
+  bossMusic: {fileID: 0}
+  bossPrefab: {fileID: 7617523036460671398, guid: 35d3982d90f1777439daa812a12ef3c2, type: 3}
+  bossData: {fileID: 11400000, guid: 93cc55b41be837b45aa9c365bf84a553, type: 2}
+  hpMultiplier: 1.1
+  damageMultiplier: 1

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dbb7d12a1b67bd44b1a6029ab35b773, type: 3}
+  m_Name: Enemy_OF_Stapler
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.EnemyData
+  displayName: Stapler Spitter
+  behavior: 1
+  maxHp: 20
+  moveSpeed: 1.3
+  contactDamage: 3
+  contactRadius: 0.5
+  contactCooldown: 0.6
+  xpValue: 3
+  isSpirit: 0
+  preferredDistance: 6.5
+  shootInterval: 2
+  projectileSpeed: 6
+  projectileDamage: 6
+  projectileLifetime: 3
+  chargeTriggerRange: 7
+  chargeWindup: 0.8
+  chargeSpeed: 9
+  chargeDuration: 0.6
+  chargeCooldown: 3

@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ace89b8d1ed1b8146bb90d63d7dfa8f3, type: 3}
+  m_Name: Weapon_FrisbeePlate
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.WeaponData
+  displayName: Frisbee Plate
+  description: Flying plates, two at a time.
+  icon: {fileID: 21300000, guid: 29e9b7205582677478a04a07608e0a92, type: 3}
+  category: 1
+  weaponPrefab: {fileID: 1860761102415185191, guid: b2764e6ede1b7f649a7038917780f6a5, type: 3}
+  unlock:
+    id: weapon_frisbee_plate
+    unlockedByDefault: 0
+    type: 0
+    target: 2000
+    boss: {fileID: 0}
+  levels:
+  - damage: 6
+    cooldown: 1.2
+    area: 7
+    speed: 12
+    amount: 2
+    pierce: 1
+    duration: 0
+    bounces: 0
+    upgradeText: 
+  - damage: 7.5
+    cooldown: 1.1
+    area: 7.5
+    speed: 12.5
+    amount: 2
+    pierce: 1
+    duration: 0
+    bounces: 0
+    upgradeText: More damage.
+  - damage: 9.8
+    cooldown: 1
+    area: 8
+    speed: 13
+    amount: 2
+    pierce: 1
+    duration: 0
+    bounces: 0
+    upgradeText: More damage, farther.
+  - damage: 12
+    cooldown: 0.9
+    area: 8.5
+    speed: 13.5
+    amount: 3
+    pierce: 1
+    duration: 0
+    bounces: 0
+    upgradeText: +1 plate.
+  - damage: 15
+    cooldown: 0.8
+    area: 9
+    speed: 14
+    amount: 3
+    pierce: 1
+    duration: 0
+    bounces: 0
+    upgradeText: Plate tectonics.

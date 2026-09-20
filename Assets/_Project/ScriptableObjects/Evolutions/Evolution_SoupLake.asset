@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aad6fd5cd4caa04f8c1875a92cddd91, type: 3}
+  m_Name: Evolution_SoupLake
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.EvolutionData
+  baseWeapon: {fileID: 11400000, guid: 50082c4b3579f4e4d9e5548af292e4ec, type: 2}
+  requiredPassive: {fileID: 11400000, guid: faa5f5cc61676c54b85d3b0ce7ac70ac, type: 2}
+  requiredPassiveLevel: 1
+  result: {fileID: 11400000, guid: 6285c6ef9c7b76e48adaa8fc190162e5, type: 2}

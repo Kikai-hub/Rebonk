@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ace89b8d1ed1b8146bb90d63d7dfa8f3, type: 3}
+  m_Name: Weapon_SpinningSpatulas
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.WeaponData
+  displayName: Spinning Spatulas
+  description: Spatulas orbit you and slap whatever they touch.
+  icon: {fileID: 21300000, guid: a3f32f07947a6774b93c636dc6c812c1, type: 3}
+  category: 2
+  weaponPrefab: {fileID: 7473486917202457183, guid: b9aacc8fd9097884cb56e6e47b123cc2, type: 3}
+  unlock:
+    id: weapon_spinning_spatulas
+    unlockedByDefault: 1
+    type: 0
+    target: 0
+    boss: {fileID: 0}
+  levels:
+  - damage: 8.4
+    cooldown: 0.5
+    area: 2
+    speed: 180
+    amount: 1
+    pierce: 1
+    duration: 2
+    bounces: 0
+    upgradeText: 
+  - damage: 8.4
+    cooldown: 0.5
+    area: 2
+    speed: 180
+    amount: 2
+    pierce: 1
+    duration: 2
+    bounces: 0
+    upgradeText: +1 spatula.
+  - damage: 11.2
+    cooldown: 0.45
+    area: 2
+    speed: 220
+    amount: 2
+    pierce: 1
+    duration: 2
+    bounces: 0
+    upgradeText: Spins faster, hits harder.
+  - damage: 11.2
+    cooldown: 0.45
+    area: 2.3
+    speed: 220
+    amount: 3
+    pierce: 1
+    duration: 2
+    bounces: 0
+    upgradeText: +1 spatula, wider orbit.
+  - damage: 15.4
+    cooldown: 0.4
+    area: 2.5
+    speed: 260
+    amount: 4
+    pierce: 1
+    duration: 2
+    bounces: 0
+    upgradeText: +1 spatula, more damage.

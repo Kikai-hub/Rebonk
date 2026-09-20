@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ace89b8d1ed1b8146bb90d63d7dfa8f3, type: 3}
+  m_Name: Weapon_ToothpickGun
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.WeaponData
+  displayName: Toothpick Gun
+  description: Rapid toothpicks that pierce enemies.
+  icon: {fileID: 21300000, guid: 8aea091d1aeb62b40a787b2b445a0802, type: 3}
+  category: 1
+  weaponPrefab: {fileID: 1375449477705261813, guid: 2001a85ade34c5240b6b25ca3fe3020f, type: 3}
+  unlock:
+    id: weapon_toothpick_gun
+    unlockedByDefault: 1
+    type: 0
+    target: 0
+    boss: {fileID: 0}
+  levels:
+  - damage: 3
+    cooldown: 0.35
+    area: 0
+    speed: 16
+    amount: 1
+    pierce: 2
+    duration: 0
+    bounces: 0
+    upgradeText: 
+  - damage: 4
+    cooldown: 0.32
+    area: 0
+    speed: 16
+    amount: 1
+    pierce: 2
+    duration: 0
+    bounces: 0
+    upgradeText: More damage.
+  - damage: 5
+    cooldown: 0.28
+    area: 0
+    speed: 17
+    amount: 2
+    pierce: 3
+    duration: 0
+    bounces: 0
+    upgradeText: +1 toothpick, pierces more.
+  - damage: 6
+    cooldown: 0.24
+    area: 0
+    speed: 17
+    amount: 2
+    pierce: 3
+    duration: 0
+    bounces: 0
+    upgradeText: Faster, more damage.
+  - damage: 7
+    cooldown: 0.2
+    area: 0
+    speed: 18
+    amount: 2
+    pierce: 4
+    duration: 0
+    bounces: 0
+    upgradeText: Pierces even more.

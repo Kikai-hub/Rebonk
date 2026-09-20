@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ace89b8d1ed1b8146bb90d63d7dfa8f3, type: 3}
+  m_Name: Weapon_KetchupShotgun
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.WeaponData
+  displayName: Ketchup Shotgun
+  description: Blasts a splat of ketchup up close.
+  icon: {fileID: 21300000, guid: 0e9df03edef5c4b45a78cc803ae265fd, type: 3}
+  category: 1
+  weaponPrefab: {fileID: 8173587009248003554, guid: 81b95d74900b82d4a98cfff51951b359, type: 3}
+  unlock:
+    id: weapon_ketchup_shotgun
+    unlockedByDefault: 0
+    type: 0
+    target: 1000
+    boss: {fileID: 0}
+  levels:
+  - damage: 4
+    cooldown: 1.4
+    area: 0
+    speed: 12
+    amount: 4
+    pierce: 1
+    duration: 0
+    bounces: 0
+    upgradeText: 
+  - damage: 4
+    cooldown: 1.3
+    area: 0
+    speed: 12
+    amount: 5
+    pierce: 1
+    duration: 0
+    bounces: 0
+    upgradeText: +1 blob.
+  - damage: 5
+    cooldown: 1.2
+    area: 0
+    speed: 12
+    amount: 6
+    pierce: 1
+    duration: 0
+    bounces: 0
+    upgradeText: +1 blob, more damage.
+  - damage: 6
+    cooldown: 1.05
+    area: 0
+    speed: 13
+    amount: 7
+    pierce: 1
+    duration: 0
+    bounces: 0
+    upgradeText: +1 blob, faster.
+  - damage: 7
+    cooldown: 0.9
+    area: 0
+    speed: 13
+    amount: 8
+    pierce: 1
+    duration: 0
+    bounces: 0
+    upgradeText: Heinz sight.

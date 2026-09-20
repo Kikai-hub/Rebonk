@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f80d9721993ae340984ea0fe44310b5, type: 3}
+  m_Name: DifficultyConfig
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.DifficultyConfig
+  hpPerMinute: 0.2
+  damagePerMinute: 0.08
+  speedPerMinute: 0.03
+  maxSpeedMultiplier: 1.8
+  perZone: 0.35
+  startSpawnInterval: 0.8
+  minSpawnInterval: 0.2
+  spawnRampMinutes: 10
+  extraPerSpawnPerMinute: 0.2
+  baseMaxAlive: 60
+  maxAliveGrowthPerMinute: 30
+  hardMaxAlive: 500

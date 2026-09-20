@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ace89b8d1ed1b8146bb90d63d7dfa8f3, type: 3}
+  m_Name: Weapon_PepperSprayMist
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.WeaponData
+  displayName: Pepper Spray Mist
+  description: A tight, fast-ticking mist.
+  icon: {fileID: 21300000, guid: 06412a1c8f2cbad499bee710d58445ba, type: 3}
+  category: 2
+  weaponPrefab: {fileID: 653576013643147635, guid: 797f2f4dd0b338e4ca318eda4f670fc5, type: 3}
+  unlock:
+    id: weapon_pepper_spray_mist
+    unlockedByDefault: 0
+    type: 2
+    target: 60
+    boss: {fileID: 0}
+  levels:
+  - damage: 2
+    cooldown: 0.2
+    area: 1.6
+    speed: 10
+    amount: 1
+    pierce: 1
+    duration: 2
+    bounces: 0
+    upgradeText: 
+  - damage: 2.6
+    cooldown: 0.19
+    area: 1.71
+    speed: 10
+    amount: 1
+    pierce: 1
+    duration: 2.2
+    bounces: 0
+    upgradeText: More damage, a bit faster.
+  - damage: 3.2
+    cooldown: 0.18
+    area: 1.82
+    speed: 10
+    amount: 1
+    pierce: 1
+    duration: 2.4
+    bounces: 0
+    upgradeText: More damage, a bit faster.
+  - damage: 3.8
+    cooldown: 0.16
+    area: 1.94
+    speed: 10
+    amount: 1
+    pierce: 1
+    duration: 2.6
+    bounces: 0
+    upgradeText: More damage, a bit faster.
+  - damage: 4.4
+    cooldown: 0.15
+    area: 2.05
+    speed: 10
+    amount: 1
+    pierce: 1
+    duration: 2.8
+    bounces: 0
+    upgradeText: Maximum power.

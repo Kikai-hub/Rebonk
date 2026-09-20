@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92cf2b54f88eb6a4da294bdc98f3e356, type: 3}
+  m_Name: Character_GrannyGrill
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.CharacterStats
+  displayName: Granny Grill
+  description: Feeds herself while fighting. Heals 1 HP every 5 seconds.
+  traitName: Warm Meals
+  sprite: {fileID: 21300000, guid: 5446b0061198bc1429585f0eb3822842, type: 3}
+  unlock:
+    id: char_granny_grill
+    unlockedByDefault: 0
+    type: 5
+    target: 0
+    boss: {fileID: 11400000, guid: 93cc55b41be837b45aa9c365bf84a553, type: 2}
+  maxHp: 110
+  moveSpeed: 3.6
+  damageMultiplier: 1
+  pickupRadius: 2
+  startingWeapon: {fileID: 11400000, guid: 50082c4b3579f4e4d9e5548af292e4ec, type: 2}
+  extraStartingWeapons: []
+  randomStartWeapon: 0
+  attackSpeedBonus: 0
+  areaBonus: 0
+  regenPerSecond: 0.2
+  armor: 0
+  critChance: 0
+  xpMultiplier: 1
+  passivePower: 1
+  levelUpChoices: 3
+  spiritDamageMultiplier: 1
+  spiritGrowthMultiplier: 1
+  revives: 0

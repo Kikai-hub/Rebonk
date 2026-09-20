@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ace89b8d1ed1b8146bb90d63d7dfa8f3, type: 3}
+  m_Name: Weapon_CorkPopper
+  m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.WeaponData
+  displayName: Cork Popper
+  description: A short, messy shotgun blast.
+  icon: {fileID: 21300000, guid: 11e0d4f2d3776ac4883e4f72b042f7f5, type: 3}
+  category: 1
+  weaponPrefab: {fileID: 4258981165291996653, guid: a405e61669463c648965b0776fc84672, type: 3}
+  unlock:
+    id: weapon_cork_popper
+    unlockedByDefault: 0
+    type: 1
+    target: 10
+    boss: {fileID: 0}
+  levels:
+  - damage: 3.5
+    cooldown: 1.3
+    area: 2
+    speed: 10
+    amount: 6
+    pierce: 1
+    duration: 2
+    bounces: 0
+    upgradeText: 
+  - damage: 4.6
+    cooldown: 1.22
+    area: 2.14
+    speed: 10.4
+    amount: 6
+    pierce: 1
+    duration: 2.2
+    bounces: 0
+    upgradeText: More damage, a bit faster.
+  - damage: 5.6
+    cooldown: 1.14
+    area: 2.28
+    speed: 10.8
+    amount: 7
+    pierce: 1
+    duration: 2.4
+    bounces: 0
+    upgradeText: +1 projectile. More damage, a bit faster.
+  - damage: 6.6
+    cooldown: 1.07
+    area: 2.42
+    speed: 11.2
+    amount: 7
+    pierce: 1
+    duration: 2.6
+    bounces: 0
+    upgradeText: More damage, a bit faster.
+  - damage: 7.7
+    cooldown: 0.99
+    area: 2.56
+    speed: 11.6
+    amount: 8
+    pierce: 1
+    duration: 2.8
+    bounces: 0
+    upgradeText: +1 projectile. Maximum power.
