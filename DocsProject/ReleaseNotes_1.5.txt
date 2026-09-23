@@ -1,0 +1,20 @@
+<en-US>
+Update 1.5
+- Endless upgrades: weapons and items keep getting stronger after max level
+- The map is now a bounded 512x512 arena, so the boss altar is much easier to find
+- Enemies grow stronger over time and in every new zone
+- Short invulnerability after taking a hit
+- Weapon and enemy balance changes
+- Now installable on many more devices (Android 9+)
+- Removed the Unity splash screen
+</en-US>
+<ru-RU>
+Обновление 1.5
+- Бесконечные улучшения: оружие и предметы продолжают усиливаться после максимального уровня
+- Карта теперь ограничена: арена 512x512, алтарь босса найти намного проще
+- Враги становятся сильнее со временем и с каждой новой зоной
+- Короткая неуязвимость после получения удара
+- Изменён баланс оружия и врагов
+- Игра стала доступна на гораздо большем числе устройств (Android 9+)
+- Убрана заставка Unity
+</ru-RU>

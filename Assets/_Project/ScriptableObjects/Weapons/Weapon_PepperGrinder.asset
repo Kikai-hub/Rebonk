@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Pepper Grinder
   description: Sprays a fan of pepper.
   icon: {fileID: 21300000, guid: 79643d8ad79a91649b0ae0ab04273a35, type: 3}
+  rarity: 1
   category: 1
   weaponPrefab: {fileID: 4154153573094622358, guid: c27a93a881f3ce441be1206a0dbf2548, type: 3}
   unlock:

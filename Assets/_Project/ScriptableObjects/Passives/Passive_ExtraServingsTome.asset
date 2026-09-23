@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Extra Servings Tome
   description: +1 projectile, blade, zone or pulse for your weapons.
   icon: {fileID: 21300000, guid: 5b20f0013ca324e4e8fc29b243facac2, type: 3}
+  rarity: 2
   stat: 9
   valuePerLevel: 1
   hasSecondStat: 0

@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Salt Storm
   description: Salty blasts rain down around you.
   icon: {fileID: 21300000, guid: 0d47cd7c6fa496144b7cf552cc7dbeef, type: 3}
+  rarity: 1
   category: 2
   weaponPrefab: {fileID: 8361337309109972497, guid: 55c54559f49144e4d94b0ec9abdb2019, type: 3}
   unlock:

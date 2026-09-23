@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Whipped Cream Blast
   description: A gigantic fluffy explosion.
   icon: {fileID: 21300000, guid: d7a6c24c8b6b2e44c8918f55aac97b21, type: 3}
+  rarity: 3
   category: 2
   weaponPrefab: {fileID: 820141202783255547, guid: c17d0db2f95fa544eb32ea3a7c907150, type: 3}
   unlock:

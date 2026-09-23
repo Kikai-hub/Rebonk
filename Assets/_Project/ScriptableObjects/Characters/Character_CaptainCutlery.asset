@@ -15,13 +15,20 @@ MonoBehaviour:
   displayName: Captain Cutlery
   description: A pirate with a fork for a hand. Attacks 15% faster.
   traitName: Quick Draw
-  sprite: {fileID: 21300000, guid: 892d5aa6a875d6a47833a85ad8c166cf, type: 3}
+  sprite: {fileID: 21300000, guid: 7052ad17eaeae134cb52f3878f02dae8, type: 3}
   unlock:
     id: char_captain_cutlery
     unlockedByDefault: 0
     type: 0
     target: 1000
     boss: {fileID: 0}
+  framesDown:
+  - {fileID: 21300000, guid: 7052ad17eaeae134cb52f3878f02dae8, type: 3}
+  framesUp:
+  - {fileID: 21300000, guid: cca62b4639e200847a923ed7cc426eb9, type: 3}
+  framesSide:
+  - {fileID: 21300000, guid: 0eaece3c4c3c13a4fae7427b40ebcad5, type: 3}
+  animFps: 6
   maxHp: 100
   moveSpeed: 4.2
   damageMultiplier: 1

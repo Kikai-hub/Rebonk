@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Rubber Recipe
   description: Projectiles bounce 1 more time.
   icon: {fileID: 21300000, guid: 7409723a12fc42745a202d1e24e20df9, type: 3}
+  rarity: 2
   stat: 15
   valuePerLevel: 1
   hasSecondStat: 0

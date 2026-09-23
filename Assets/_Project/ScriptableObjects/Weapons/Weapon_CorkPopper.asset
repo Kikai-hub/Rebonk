@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Cork Popper
   description: A short, messy shotgun blast.
   icon: {fileID: 21300000, guid: 11e0d4f2d3776ac4883e4f72b042f7f5, type: 3}
+  rarity: 3
   category: 1
   weaponPrefab: {fileID: 4258981165291996653, guid: a405e61669463c648965b0776fc84672, type: 3}
   unlock:

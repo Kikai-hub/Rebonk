@@ -31,13 +31,19 @@ namespace Rebonk.Gameplay
         private Portal _portal;
         private bool _discovered;
 
+        /// <summary>The one altar in the current zone, for HUD elements (the minimap) that need it directly.</summary>
+        public static Altar Current { get; private set; }
+
         public bool IsUsable => _state == State.Idle;
+        /// <summary>Once seen on screen, the altar's spot is known for the rest of the zone (minimap marker, HUD arrow).</summary>
+        public bool Discovered => _discovered;
 
         /// <summary>Called by the map generator: the altar stands wherever the generated map puts it.</summary>
         public void PlaceAt(Vector2 position) => transform.position = position;
 
         private void OnEnable()
         {
+            Current = this;
             Enemy.Killed += OnEnemyKilled;
             SetWaypoint();
         }
@@ -47,6 +53,8 @@ namespace Rebonk.Gameplay
             Enemy.Killed -= OnEnemyKilled;
             if (Waypoints.Altar == transform)
                 Waypoints.Altar = null;
+            if (Current == this)
+                Current = null;
         }
 
         private void Start()

@@ -21,6 +21,9 @@ namespace Rebonk.Gameplay
         public override int MaxLevel => maxLevel;
         public override bool IsWeapon => false;
 
+        /// <summary>Only ordinary stat books grow forever; special ones (extra lives, extra cards, ...) stay capped.</summary>
+        public override bool AllowsEndless => maxLevel >= 5;
+
         public override string GetCardText(int level) => description;
     }
 }

@@ -10,9 +10,19 @@ namespace Rebonk.Gameplay
         [TextArea] public string description;
         [Tooltip("Short name of the character's unique trait, shown in the menu.")]
         public string traitName;
-        [Tooltip("In-game body sprite and menu portrait (16x16).")]
+        [Tooltip("In-game body sprite and menu portrait (16x16). Also the fallback body while walking, if the frame arrays below are empty.")]
         public Sprite sprite;
         public UnlockInfo unlock = new UnlockInfo { unlockedByDefault = true };
+
+        [Header("Walk animation (optional; empty direction = static sprite for that direction)")]
+        [Tooltip("Frames while walking toward the camera (south). Drawn facing the camera.")]
+        public Sprite[] framesDown;
+        [Tooltip("Frames while walking away from the camera (north, back view).")]
+        public Sprite[] framesUp;
+        [Tooltip("Frames while walking sideways. Draw facing right; the game mirrors them automatically when moving left.")]
+        public Sprite[] framesSide;
+        [Tooltip("Walk animation playback speed, frames per second.")]
+        public float animFps = 6f;
 
         [Header("Base stats")]
         public float maxHp = 100f;

@@ -9,7 +9,17 @@ namespace Rebonk.UI
     /// <summary>Scrollable list of all achievements: earned ones highlighted, the rest with progress.</summary>
     public class AchievementsScreen : MonoBehaviour
     {
+        [System.Serializable]
+        public class IconEntry
+        {
+            public UnlockType type;
+            public Sprite icon;
+        }
+
         [SerializeField] private InfoRow template;
+        [Tooltip("Icon per achievement condition type; types not listed use the default icon.")]
+        [SerializeField] private IconEntry[] icons;
+        [SerializeField] private Sprite defaultIcon;
         [SerializeField] private RectTransform content;
         [SerializeField] private ScrollRect scroll;
         [SerializeField] private Text counterText;
@@ -43,10 +53,19 @@ namespace Rebonk.UI
                 var a = all[i];
                 var earned = Achievements.IsEarned(data, a);
                 var progress = a.rule.ProgressText(data);
-                _rows[i].Bind(Loc.T(a.name), a.rule.Describe(), earned ? Loc.T("Done") : progress, earned);
+                _rows[i].Bind(Loc.T(a.name), a.rule.Describe(), earned ? Loc.T("Done") : progress, earned, IconFor(a.rule.type));
             }
 
             counterText.text = Loc.F("Earned {0} / {1}", Achievements.EarnedCount(data), all.Count);
+        }
+
+        private Sprite IconFor(UnlockType type)
+        {
+            if (icons != null)
+                foreach (var e in icons)
+                    if (e.type == type)
+                        return e.icon;
+            return defaultIcon;
         }
     }
 }

@@ -63,7 +63,7 @@ namespace Rebonk.Core
                 return;
 
             if (FlatReduction > 0f)
-                amount = Mathf.Max(1f, amount - FlatReduction);
+                amount = Mathf.Max(1f, amount * 0.25f, amount - FlatReduction); // armor never removes more than 75% of a hit
 
             Current = Mathf.Max(0f, Current - amount);
             Changed?.Invoke(Current, Max);

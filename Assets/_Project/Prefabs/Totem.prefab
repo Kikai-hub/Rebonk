@@ -199,6 +199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.Totem
   body: {fileID: 2222449011146259780}
+  usedSprite: {fileID: 21300000, guid: 3c76c1e35bf98db40bbd3508c2aea8f1, type: 3}
   ring: {fileID: 5098880039368810553}
   activateRadius: 3.2
   activateSeconds: 5

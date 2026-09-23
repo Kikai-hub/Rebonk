@@ -15,13 +15,20 @@ MonoBehaviour:
   displayName: Madame Mustard
   description: Reads the future and hits critically 10% of the time.
   traitName: Spicy Fortune
-  sprite: {fileID: 21300000, guid: 6b6aa91556ecc614e9c8a784dbd4662e, type: 3}
+  sprite: {fileID: 21300000, guid: ec71ea5338fcfbe44a04c071fb40b41c, type: 3}
   unlock:
     id: char_madame_mustard
     unlockedByDefault: 0
     type: 4
     target: 180
     boss: {fileID: 0}
+  framesDown:
+  - {fileID: 21300000, guid: ec71ea5338fcfbe44a04c071fb40b41c, type: 3}
+  framesUp:
+  - {fileID: 21300000, guid: 75676cc3a1af0774ba6e51b4348c4e82, type: 3}
+  framesSide:
+  - {fileID: 21300000, guid: d339059a8fc93454e924ee4a5d163b9b, type: 3}
+  animFps: 6
   maxHp: 95
   moveSpeed: 3.8
   damageMultiplier: 1

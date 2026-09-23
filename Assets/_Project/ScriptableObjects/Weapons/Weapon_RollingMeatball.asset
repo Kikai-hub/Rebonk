@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Rolling Meatball
   description: A heavy meatball that comes back.
   icon: {fileID: 21300000, guid: 08bcd66754ccc6f4d8c7567eded17fd8, type: 3}
+  rarity: 2
   category: 1
   weaponPrefab: {fileID: 4699644587878888595, guid: d2af5bc179320b744a636e57acc1f28e, type: 3}
   unlock:

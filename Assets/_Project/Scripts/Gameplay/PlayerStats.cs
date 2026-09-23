@@ -117,7 +117,11 @@ namespace Rebonk.Gameplay
                 {
                     _bonus[(int)kv.Key.stat] += kv.Key.valuePerLevel * kv.Value * power;
                     if (kv.Key.hasSecondStat)
-                        _bonus[(int)kv.Key.stat2] += kv.Key.valuePerLevel2 * kv.Value * power;
+                    {
+                        // A negative trade-off stops growing at the designed maximum, so endless levels never break the character.
+                        var level2 = kv.Key.valuePerLevel2 < 0f ? Mathf.Min(kv.Value, kv.Key.MaxLevel) : kv.Value;
+                        _bonus[(int)kv.Key.stat2] += kv.Key.valuePerLevel2 * level2 * power;
+                    }
                 }
             }
 
@@ -125,22 +129,22 @@ namespace Rebonk.Gameplay
                 _bonus[(int)b.stat] += b.value;
 
             MaxHp = Mathf.Max(10f, _base.maxHp * (1f + B(StatType.MaxHp)) + B(StatType.MaxHpFlat));
-            MoveSpeed = Mathf.Max(1f, _base.moveSpeed * (1f + B(StatType.MoveSpeed)));
+            MoveSpeed = Mathf.Clamp(_base.moveSpeed * (1f + B(StatType.MoveSpeed)), 1f, 12f);
             DamageMultiplier = Mathf.Max(0.1f, _base.damageMultiplier * (1f + B(StatType.Damage)));
-            PickupRadius = Mathf.Max(0.5f, _base.pickupRadius * (1f + B(StatType.PickupRadius)));
-            AttackSpeed = Mathf.Max(0.3f, 1f + _base.attackSpeedBonus + B(StatType.AttackSpeed));
-            AreaMultiplier = Mathf.Max(0.3f, 1f + _base.areaBonus + B(StatType.Area));
+            PickupRadius = Mathf.Clamp(_base.pickupRadius * (1f + B(StatType.PickupRadius)), 0.5f, 30f);
+            AttackSpeed = Mathf.Clamp(1f + _base.attackSpeedBonus + B(StatType.AttackSpeed), 0.3f, 8f);
+            AreaMultiplier = Mathf.Clamp(1f + _base.areaBonus + B(StatType.Area), 0.3f, 6f);
             CritChance = Mathf.Clamp01(_base.critChance + B(StatType.CritChance));
             CritMultiplier = 2f + B(StatType.CritDamage);
             XpMultiplier = _base.xpMultiplier * (1f + B(StatType.XpGain));
             RegenPerSecond = _base.regenPerSecond + B(StatType.Regen);
             Armor = _base.armor + B(StatType.Armor);
-            Lifesteal = Mathf.Max(0f, B(StatType.Lifesteal));
-            ExtraAmount = Mathf.RoundToInt(B(StatType.ExtraProjectiles));
-            ExtraPierce = Mathf.RoundToInt(B(StatType.Pierce));
-            ExtraBounces = Mathf.RoundToInt(B(StatType.Bounces));
-            ProjectileSpeedMultiplier = Mathf.Max(0.3f, 1f + B(StatType.ProjectileSpeed));
-            DurationMultiplier = Mathf.Max(0.3f, 1f + B(StatType.Duration));
+            Lifesteal = Mathf.Clamp(B(StatType.Lifesteal), 0f, 0.3f);
+            ExtraAmount = Mathf.Min(12, Mathf.RoundToInt(B(StatType.ExtraProjectiles)));
+            ExtraPierce = Mathf.Min(20, Mathf.RoundToInt(B(StatType.Pierce)));
+            ExtraBounces = Mathf.Min(15, Mathf.RoundToInt(B(StatType.Bounces)));
+            ProjectileSpeedMultiplier = Mathf.Clamp(1f + B(StatType.ProjectileSpeed), 0.3f, 5f);
+            DurationMultiplier = Mathf.Clamp(1f + B(StatType.Duration), 0.3f, 6f);
             DodgeChance = Mathf.Clamp(B(StatType.Dodge), 0f, 0.6f);
             ExtraChoices = Mathf.RoundToInt(B(StatType.ExtraChoices));
             ExtraLives = Mathf.RoundToInt(B(StatType.ExtraLives));

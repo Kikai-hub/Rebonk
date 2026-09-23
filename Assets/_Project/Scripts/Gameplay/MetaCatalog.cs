@@ -45,6 +45,15 @@ namespace Rebonk.Gameplay
                     yield return w;
         }
 
+        public IEnumerable<PassiveData> Passives()
+        {
+            if (pool == null)
+                yield break;
+            foreach (var u in pool.upgrades)
+                if (u is PassiveData p)
+                    yield return p;
+        }
+
         /// <summary>Unlocks everything whose condition is now met. Returns display names of the new unlocks.</summary>
         public List<string> EvaluateUnlocks(SaveData data)
         {

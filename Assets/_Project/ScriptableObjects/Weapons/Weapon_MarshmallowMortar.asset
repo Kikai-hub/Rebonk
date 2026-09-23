@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Marshmallow Mortar
   description: Soft, slow and seeks its target.
   icon: {fileID: 21300000, guid: 6beefa2d1fe5950408b616550cc1bd33, type: 3}
+  rarity: 3
   category: 1
   weaponPrefab: {fileID: 543474817701944814, guid: 601e88b4bef206e41a945e4a568273e2, type: 3}
   unlock:

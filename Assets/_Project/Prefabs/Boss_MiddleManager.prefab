@@ -200,6 +200,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 164c9a571be26fa419edfdc1bc98b6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Rebonk.Core::Rebonk.Core.Health
+  FlatReduction: 0
+  DodgeChance: 0
+  Invulnerable: 0
 --- !u!114 &7617523036460671398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,6 +218,9 @@ MonoBehaviour:
   body: {fileID: 4210878545184549939}
   flashDuration: 0.1
   flashStrength: 0.65
+  spriteDown: {fileID: 21300000, guid: d0c1246049dada246a75b192b26ce394, type: 3}
+  spriteUp: {fileID: 21300000, guid: bfe23076b16542859768e4845d3b9130, type: 3}
+  spriteSide: {fileID: 21300000, guid: f8f9e4ee9ac34e798508f7bc81d83528, type: 3}
 --- !u!114 &1161705757662772454
 MonoBehaviour:
   m_ObjectHideFlags: 0

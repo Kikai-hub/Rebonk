@@ -105,7 +105,7 @@ namespace Rebonk.Gameplay
             var halfW = halfH * viewCamera.aspect;
             var radius = Mathf.Sqrt(halfW * halfW + halfH * halfH) + margin;
             var angle = UnityEngine.Random.value * Mathf.PI * 2f;
-            var spot = center + new Vector2(Mathf.Cos(angle), Mathf.Sin(angle)) * radius;
+            var spot = ObstacleMap.ArenaSpawnPoint(center, center + new Vector2(Mathf.Cos(angle), Mathf.Sin(angle)) * radius);
 
             for (var g = 0; g < entry.groupSize; g++)
             {

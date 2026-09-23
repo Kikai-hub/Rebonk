@@ -451,3 +451,47 @@ Long Haul=>Долгий путь
 Dedicated=>Преданный игрок
 Daily Habit=>Ежедневная привычка
 Quest Master=>Мастер заданий
+
+# Endless upgrades
+Endless upgrade: +{0}% damage and a little more area=>Бесконечное улучшение: +{0}% урона и чуть больше области
+Endless upgrade: the bonus keeps growing.=>Бесконечное улучшение: бонус продолжает расти.
+
+# Stage: minimap
+MAP=>КАРТА
+
+# Stage: characters screen redesign
+Unlocked {0} / {1}=>Открыто {0} / {1}
+EQUIPPED=>ВЫБРАНО
+Random weapon=>Случайное оружие
+HEALTH=>ЗДОРОВЬЕ
+SPEED=>СКОРОСТЬ
+DAMAGE=>УРОН
+ATTACK SPEED=>СКОРОСТЬ АТАКИ
+AREA=>ОБЛАСТЬ
+TRAIT=>ОСОБЕННОСТЬ
+STARTING WEAPON=>СТАРТОВОЕ ОРУЖИЕ
+Choose your hero=>Выбери своего героя
+PASSIVE=>ПАССИВНЫЕ
+Weapons & Items=>Оружие и предметы
+Common=>Обычное
+Rare=>Редкое
+Epic=>Эпическое
+Legendary=>Легендарное
+Quality=>Качество
+Passive item=>Пассивный предмет
+Per level=>За уровень
+Max level=>Макс. уровень
+Always available=>Доступно всегда
+Each world — new dangers, enemies and rewards.=>Каждый мир — новые опасности, враги и награды.
+ENEMIES=>ВРАГИ
+LOOT=>ЛУТ
+DIFFICULTY=>СЛОЖНОСТЬ
+Mild=>Слабые
+Moderate=>Средние
+Fierce=>Сильные
+Standard=>Обычный
+Good=>Хороший
+Scarce=>Редкий
+Easy=>Лёгкая
+Balanced=>Средняя
+Brutal=>Высокая

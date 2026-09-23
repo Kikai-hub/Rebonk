@@ -27,6 +27,7 @@ namespace Rebonk.Gameplay
         private readonly Dictionary<WeaponData, Weapon> _weapons = new Dictionary<WeaponData, Weapon>();
         private readonly List<UpgradeChoice> _weaponCandidates = new List<UpgradeChoice>();
         private readonly List<UpgradeChoice> _itemCandidates = new List<UpgradeChoice>();
+        private readonly List<UpgradeChoice> _endlessCandidates = new List<UpgradeChoice>();
         private PlayerController _player;
 
         /// <summary>Raised whenever any inventory finishes an evolution (run statistics).</summary>
@@ -88,7 +89,7 @@ namespace Rebonk.Gameplay
             }
 
             var next = GetLevel(data) + 1;
-            if (next > data.MaxLevel)
+            if (next > data.MaxLevel && !(next > 1 && data.AllowsEndless))
                 return;
 
             _levels[data] = next;
@@ -158,11 +159,17 @@ namespace Rebonk.Gameplay
             // 2) regular upgrades, split into weapons and items
             _weaponCandidates.Clear();
             _itemCandidates.Clear();
+            _endlessCandidates.Clear();
             foreach (var data in pool.upgrades)
             {
                 var level = GetLevel(data);
                 if (level >= data.MaxLevel)
+                {
+                    // Owned and maxed: keeps growing forever, but only fills cards nothing else can.
+                    if (data.AllowsEndless && IsOwned(data))
+                        _endlessCandidates.Add(new UpgradeChoice { Data = data, NextLevel = level + 1 });
                     continue;
+                }
                 if (level == 0 && !HasFreeSlot(data))
                     continue;
                 // Weapons still locked in the meta progression cannot be offered as new cards.
@@ -189,7 +196,26 @@ namespace Rebonk.Gameplay
                 result.Add(list[index]);
                 list.RemoveAt(index);
             }
+
+            // Evolved weapons are not in the pool but are owned and can grow endlessly too.
+            foreach (var kv in _weapons)
+            {
+                var weapon = kv.Key;
+                if (!pool.upgrades.Contains(weapon) && weapon.AllowsEndless)
+                    _endlessCandidates.Add(new UpgradeChoice { Data = weapon, NextLevel = GetLevel(weapon) + 1 });
+            }
+
+            // Everything at its designed maximum: endless levels fill the remaining cards.
+            while (result.Count < count && _endlessCandidates.Count > 0)
+            {
+                var index = UnityEngine.Random.Range(0, _endlessCandidates.Count);
+                result.Add(_endlessCandidates[index]);
+                _endlessCandidates.RemoveAt(index);
+            }
         }
+
+        private bool IsOwned(UpgradeData data) =>
+            data is WeaponData w ? _weapons.ContainsKey(w) : data is PassiveData p && _passives.ContainsKey(p);
 
         private bool HasFreeSlot(UpgradeData data) =>
             data.IsWeapon ? _weapons.Count < maxWeapons : _passives.Count < maxPassives;

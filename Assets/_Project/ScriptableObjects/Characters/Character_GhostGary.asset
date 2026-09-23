@@ -16,13 +16,20 @@ MonoBehaviour:
   description: 'The spirits like him: they hit 30% softer and grow stronger more
     slowly.'
   traitName: Friendly Fire
-  sprite: {fileID: 21300000, guid: 03ad95bb8f218b4449ac0945babe1934, type: 3}
+  sprite: {fileID: 21300000, guid: 453c569e5d9383f42961eeaf57d8883f, type: 3}
   unlock:
     id: char_ghost_gary
     unlockedByDefault: 0
     type: 4
     target: 360
     boss: {fileID: 0}
+  framesDown:
+  - {fileID: 21300000, guid: 453c569e5d9383f42961eeaf57d8883f, type: 3}
+  framesUp:
+  - {fileID: 21300000, guid: 874dac006001e7f468d3f6c77252dc40, type: 3}
+  framesSide:
+  - {fileID: 21300000, guid: 91f48840f7fa9c34b83d9a1625b20cc9, type: 3}
+  animFps: 6
   maxHp: 90
   moveSpeed: 4.4
   damageMultiplier: 1

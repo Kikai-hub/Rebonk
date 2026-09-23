@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Dodge Manual
   description: +4% chance to dodge a hit.
   icon: {fileID: 21300000, guid: 0d51ccefe9bb209458fced489cdfe5b9, type: 3}
+  rarity: 1
   stat: 18
   valuePerLevel: 0.04
   hasSecondStat: 0

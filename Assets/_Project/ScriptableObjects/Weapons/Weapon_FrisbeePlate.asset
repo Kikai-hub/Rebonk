@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Frisbee Plate
   description: Flying plates, two at a time.
   icon: {fileID: 21300000, guid: 29e9b7205582677478a04a07608e0a92, type: 3}
+  rarity: 1
   category: 1
   weaponPrefab: {fileID: 1860761102415185191, guid: b2764e6ede1b7f649a7038917780f6a5, type: 3}
   unlock:

@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Second Helping
   description: 'One extra life: revive at half HP.'
   icon: {fileID: 21300000, guid: 349421e7fe87b514d9de2f55757db743, type: 3}
+  rarity: 3
   stat: 20
   valuePerLevel: 1
   hasSecondStat: 0

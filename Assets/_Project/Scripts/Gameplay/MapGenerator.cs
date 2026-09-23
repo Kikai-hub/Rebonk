@@ -24,20 +24,22 @@ namespace Rebonk.Gameplay
         [SerializeField] private int chunkSize = 16;
         [Tooltip("Chunks kept loaded around the player in every direction.")]
         [SerializeField] private int loadRadius = 3;
+        [Tooltip("The play area is a square of this many chunks in every direction from the start (0 = endless map). 10 chunks x 16 = 160 units, i.e. a 320 x 320 arena that contains the altar and every totem.")]
+        [SerializeField] private int arenaHalfChunks = 10;
 
         [Header("Placement")]
         [SerializeField] private float startSafeRadius = 6f;
         [SerializeField] private float altarClearRadius = 4f;
         [Tooltip("The altar lands at a random angle and a random distance from the start within this range.")]
-        [SerializeField] private Vector2 altarDistance = new Vector2(28f, 85f);
+        [SerializeField] private Vector2 altarDistance = new Vector2(38f, 125f);
 
         [Header("Totems")]
         [SerializeField] private Totem totemPrefab;
         [Tooltip("How many totems each zone gets (inclusive range).")]
         [SerializeField] private Vector2Int totemCount = new Vector2Int(15, 20);
         [Tooltip("Totems are scattered between these distances from the start.")]
-        [SerializeField] private Vector2 totemDistance = new Vector2(12f, 95f);
-        [SerializeField] private float totemSpacing = 14f;
+        [SerializeField] private Vector2 totemDistance = new Vector2(8f, 147f);
+        [SerializeField] private float totemSpacing = 19f;
         [SerializeField] private float totemClearRadius = 3f;
 
         private struct ObstacleData
@@ -137,6 +139,9 @@ namespace Rebonk.Gameplay
         private void BuildZone(int zoneLevel)
         {
             UnloadAll();
+            ObstacleMap.ArenaHalfSize = arenaHalfChunks * chunkSize;
+            BuildBorder();
+            MinimapModel.ResetForZone(ObstacleMap.ArenaHalfSize, _world.backgroundColor);
             _seed = RunSettings.Seed + zoneLevel * 7919;
             var rng = new Random(_seed);
             _noiseOffsetX = (float)rng.NextDouble() * 1000f;
@@ -229,6 +234,8 @@ namespace Rebonk.Gameplay
                 for (var y = -loadRadius; y <= loadRadius; y++)
                 {
                     var c = new Vector2Int(center.x + x, center.y + y);
+                    if (!InArenaChunk(c))
+                        continue;
                     if (!_chunks.ContainsKey(c))
                         _loadQueue.Add(c);
                 }
@@ -272,6 +279,48 @@ namespace Rebonk.Gameplay
             }
         }
 
+        // ---------- arena ----------
+
+        private GameObject _borderRoot;
+
+        private bool InArenaChunk(Vector2Int c) =>
+            arenaHalfChunks <= 0 || (c.x >= -arenaHalfChunks && c.x < arenaHalfChunks && c.y >= -arenaHalfChunks && c.y < arenaHalfChunks);
+
+        /// <summary>Dark walls just outside the play area, so the end of the map reads as a border instead of an empty void.</summary>
+        private void BuildBorder()
+        {
+            if (_borderRoot != null)
+                Destroy(_borderRoot);
+
+            var half = ObstacleMap.ArenaHalfSize;
+            var sprite = _world != null && _world.groundTiles != null && _world.groundTiles.Length > 0 ? _world.groundTiles[0] : null;
+            if (half <= 0f || sprite == null)
+                return;
+
+            _borderRoot = new GameObject("ArenaBorder");
+            _borderRoot.transform.SetParent(transform, false);
+
+            const float thickness = 26f; // wider than half a screen, so nothing but the wall is visible from the edge
+            var spriteSize = sprite.bounds.size;
+            var span = half * 2f + thickness * 2f;
+            AddBand(sprite, spriteSize, new Vector2(0f, half + thickness * 0.5f), new Vector2(span, thickness));
+            AddBand(sprite, spriteSize, new Vector2(0f, -half - thickness * 0.5f), new Vector2(span, thickness));
+            AddBand(sprite, spriteSize, new Vector2(-half - thickness * 0.5f, 0f), new Vector2(thickness, half * 2f));
+            AddBand(sprite, spriteSize, new Vector2(half + thickness * 0.5f, 0f), new Vector2(thickness, half * 2f));
+        }
+
+        private void AddBand(Sprite sprite, Vector3 spriteSize, Vector2 center, Vector2 size)
+        {
+            var go = new GameObject("Band");
+            go.transform.SetParent(_borderRoot.transform, false);
+            go.transform.position = center;
+            go.transform.localScale = new Vector3(size.x / spriteSize.x, size.y / spriteSize.y, 1f);
+            var sr = go.AddComponent<SpriteRenderer>();
+            sr.sprite = sprite;
+            sr.color = new Color(0.1f, 0.07f, 0.14f, 1f);
+            sr.sortingOrder = 4;
+        }
+
         // ---------- chunk generation ----------
 
         private static int Hash(int seed, int x, int y, int salt)
@@ -305,6 +354,7 @@ namespace Rebonk.Gameplay
                 chunk.Objects.Add(go);
                 chunk.ObstacleObjects.Add(go);
                 chunk.Circles.Add(new ObstacleMap.Circle { Center = o.Position, Radius = o.Prop.collisionRadius });
+                MinimapModel.PaintObstacle(o.Position);
             }
             ObstacleMap.Set(c, chunk.Circles);
 

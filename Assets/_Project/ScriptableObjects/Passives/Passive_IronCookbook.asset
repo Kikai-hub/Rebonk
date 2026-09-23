@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Iron Cookbook
   description: '+1 armor: every hit hurts 1 less.'
   icon: {fileID: 21300000, guid: 0f2cd0bc6db905b44b3ade692867168b, type: 3}
+  rarity: 1
   stat: 7
   valuePerLevel: 1
   hasSecondStat: 0

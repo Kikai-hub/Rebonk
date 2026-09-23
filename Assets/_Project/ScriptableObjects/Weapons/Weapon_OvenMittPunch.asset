@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Oven Mitt Punch
   description: A hot, heavy jab.
   icon: {fileID: 21300000, guid: c19648305e10aef4f91a523331bf9254, type: 3}
+  rarity: 3
   category: 0
   weaponPrefab: {fileID: 5838290487857085934, guid: d70fa56418139bd438029db658a63ac4, type: 3}
   unlock:

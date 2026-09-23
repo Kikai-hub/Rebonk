@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Pepper Spray Mist
   description: A tight, fast-ticking mist.
   icon: {fileID: 21300000, guid: 06412a1c8f2cbad499bee710d58445ba, type: 3}
+  rarity: 1
   category: 2
   weaponPrefab: {fileID: 653576013643147635, guid: 797f2f4dd0b338e4ca318eda4f670fc5, type: 3}
   unlock:

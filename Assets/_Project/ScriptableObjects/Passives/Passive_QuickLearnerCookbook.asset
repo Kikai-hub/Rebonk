@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Quick Learner Cookbook
   description: +10% experience gained.
   icon: {fileID: 21300000, guid: aeb8655f4972fff4086f429b302e580d, type: 3}
+  rarity: 1
   stat: 17
   valuePerLevel: 0.1
   hasSecondStat: 0

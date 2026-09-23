@@ -15,13 +15,20 @@ MonoBehaviour:
   displayName: Combo Connie
   description: A juggling chef who starts with two weapons.
   traitName: Double Trouble
-  sprite: {fileID: 21300000, guid: cf2becadfe6862a45a33352b2126621c, type: 3}
+  sprite: {fileID: 21300000, guid: bdeae0ac3d6a3a145ada8d10cae4a525, type: 3}
   unlock:
     id: char_combo_connie
     unlockedByDefault: 0
     type: 0
     target: 5000
     boss: {fileID: 0}
+  framesDown:
+  - {fileID: 21300000, guid: bdeae0ac3d6a3a145ada8d10cae4a525, type: 3}
+  framesUp:
+  - {fileID: 21300000, guid: 6566f3409d0f2c74c85019d32568699d, type: 3}
+  framesSide:
+  - {fileID: 21300000, guid: 721136f0159c35642bece00cda64c099, type: 3}
+  animFps: 6
   maxHp: 70
   moveSpeed: 4.3
   damageMultiplier: 1

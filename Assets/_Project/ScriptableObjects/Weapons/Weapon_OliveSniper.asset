@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Olive Sniper
   description: Fast, precise, pierces two.
   icon: {fileID: 21300000, guid: a8450874b5d8f9d418ba632ee8793009, type: 3}
+  rarity: 2
   category: 1
   weaponPrefab: {fileID: 4840571222058174945, guid: ccd5df539f9bacd48bd9f0e0650760aa, type: 3}
   unlock:

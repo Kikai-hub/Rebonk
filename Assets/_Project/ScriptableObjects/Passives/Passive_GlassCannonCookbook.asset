@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Glass Cannon Cookbook
   description: +20% damage, -8% max HP.
   icon: {fileID: 21300000, guid: 338a9dcd3a036724fab46242c8dd6aaf, type: 3}
+  rarity: 2
   stat: 2
   valuePerLevel: 0.2
   hasSecondStat: 1

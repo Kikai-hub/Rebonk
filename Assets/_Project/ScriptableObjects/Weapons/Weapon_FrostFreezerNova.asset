@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Frost Freezer Nova
   description: A chilly burst around you.
   icon: {fileID: 21300000, guid: 3845879429f6cba43a42881f0ea6d5c3, type: 3}
+  rarity: 2
   category: 2
   weaponPrefab: {fileID: 2273780226461095834, guid: 114a54febcac2ba4fbffddc09e5604a6, type: 3}
   unlock:

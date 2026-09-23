@@ -15,7 +15,15 @@ MonoBehaviour:
   displayName: Spatula Tornado
   description: 'EVOLVED Spatulas: a whirling wall of six.'
   icon: {fileID: 21300000, guid: e6c03a2a74c841245a1073dc47b2fa7a, type: 3}
+  rarity: 3
+  category: 0
   weaponPrefab: {fileID: 1157639071646805447, guid: 9144904a306125e4c9e59186491b3fce, type: 3}
+  unlock:
+    id: 
+    unlockedByDefault: 1
+    type: 0
+    target: 100
+    boss: {fileID: 0}
   levels:
   - damage: 14
     cooldown: 0.3
@@ -24,4 +32,5 @@ MonoBehaviour:
     amount: 6
     pierce: 1
     duration: 0
+    bounces: 0
     upgradeText: 

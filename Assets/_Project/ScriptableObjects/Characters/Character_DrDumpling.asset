@@ -15,13 +15,20 @@ MonoBehaviour:
   displayName: Dr. Dumpling
   description: A dumpling in a lab coat. His weapons cover more ground.
   traitName: Big Steam
-  sprite: {fileID: 21300000, guid: 0996634dd524d494b80ce33488aa53d2, type: 3}
+  sprite: {fileID: 21300000, guid: 669d130c0a9a93346a8708c66f22820d, type: 3}
   unlock:
     id: char_dr_dumpling
     unlockedByDefault: 0
     type: 6
     target: 15
     boss: {fileID: 0}
+  framesDown:
+  - {fileID: 21300000, guid: 669d130c0a9a93346a8708c66f22820d, type: 3}
+  framesUp:
+  - {fileID: 21300000, guid: 74fe737f9d40e8343896aaa03d493d2e, type: 3}
+  framesSide:
+  - {fileID: 21300000, guid: c1348631bcb2c3947a113f21df5d9aee, type: 3}
+  animFps: 6
   maxHp: 90
   moveSpeed: 4
   damageMultiplier: 1

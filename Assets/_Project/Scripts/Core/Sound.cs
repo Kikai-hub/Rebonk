@@ -46,6 +46,9 @@ namespace Rebonk.Core
         {
             _bank = Resources.Load<SoundBank>("Audio/SoundBank");
 
+            // The only listener in the game, living across scenes (all audio is 2D, so its position does not matter).
+            gameObject.AddComponent<AudioListener>();
+
             _voices = new AudioSource[SfxVoices];
             for (var i = 0; i < SfxVoices; i++)
                 _voices[i] = NewSource(false);

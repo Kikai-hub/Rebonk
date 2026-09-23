@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Burp Shockwave
   description: A mighty burp blasts everything around you.
   icon: {fileID: 21300000, guid: 0ea01147e577cce4b8d256ccd86f98bc, type: 3}
+  rarity: 3
   category: 2
   weaponPrefab: {fileID: 2325836400254147772, guid: b1801d324bacc684a814bf5e5411448c, type: 3}
   unlock:

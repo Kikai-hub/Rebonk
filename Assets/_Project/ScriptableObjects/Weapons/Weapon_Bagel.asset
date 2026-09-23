@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Boomerang Bagel
   description: A bagel that always comes back.
   icon: {fileID: 21300000, guid: 8c8933c8cdaa12d428618c56b82870db, type: 3}
+  rarity: 2
   category: 1
   weaponPrefab: {fileID: 4552479104798972692, guid: c1d29b29aa0d6834fb6b4ef39bb9db60, type: 3}
   unlock:

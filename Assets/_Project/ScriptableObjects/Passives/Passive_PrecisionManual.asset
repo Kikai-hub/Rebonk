@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Precision Manual
   description: +5% critical hit chance.
   icon: {fileID: 21300000, guid: f6dc9013803264f47b166bb4078f369a, type: 3}
+  rarity: 1
   stat: 10
   valuePerLevel: 0.05
   hasSecondStat: 0

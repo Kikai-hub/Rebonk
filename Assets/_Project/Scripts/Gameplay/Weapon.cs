@@ -11,12 +11,20 @@ namespace Rebonk.Gameplay
         public WeaponData Data { get; private set; }
         public int Level { get; private set; }
 
+        /// <summary>Levels taken beyond the designed maximum (endless upgrades).</summary>
+        public int OverLevel => Data != null ? Mathf.Max(0, Level - Data.MaxLevel) : 0;
+
+        /// <summary>Each endless level adds this much damage (0.15 = +15%) and a little area.</summary>
+        public const float EndlessDamagePerLevel = 0.15f;
+        public const float EndlessAreaPerLevel = 0.02f;
+        private const float EndlessAreaCap = 0.5f;
+
         /// <summary>Damage for one attack: level table x character multiplier, multiplied on a critical hit.</summary>
         protected float Damage
         {
             get
             {
-                var d = Current.damage * Player.Stats.DamageMultiplier;
+                var d = Current.damage * Player.Stats.DamageMultiplier * (1f + EndlessDamagePerLevel * OverLevel);
                 var crit = Player.Stats.CritChance;
                 if (crit > 0f && Random.value < crit)
                     d *= Player.Stats.CritMultiplier;
@@ -27,7 +35,7 @@ namespace Rebonk.Gameplay
         protected float Cooldown => Current.cooldown / Player.Stats.AttackSpeed;
 
         /// <summary>The level table's area / range / radius, scaled by the area bonus.</summary>
-        protected float Area => Current.area * Player.Stats.AreaMultiplier;
+        protected float Area => Current.area * Player.Stats.AreaMultiplier * (1f + Mathf.Min(EndlessAreaCap, EndlessAreaPerLevel * OverLevel));
 
         /// <summary>Projectiles / blades / zones / pulses per use, including items and blessings that add more.</summary>
         protected int Amount => Mathf.Max(1, Current.amount + Player.Stats.ExtraAmount);
@@ -53,7 +61,7 @@ namespace Rebonk.Gameplay
 
         public void SetLevel(int level)
         {
-            Level = Mathf.Clamp(level, 1, Data.MaxLevel);
+            Level = Mathf.Max(1, level); // above MaxLevel the last table row is reused plus the endless bonus
             Current = Data.GetLevel(Level);
             OnLevelChanged();
         }

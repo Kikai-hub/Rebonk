@@ -93,7 +93,7 @@ MonoBehaviour:
     minInterval: 0.5
   - id: 13
     clips:
-    - {fileID: 8300000, guid: 4c3ed858dee5aa144b91afd38fc444f5, type: 3}
+    - {fileID: 8300000, guid: 4a7e75c643b2ea74e925d0db3008ada3, type: 3}
     volume: 0.8
     pitchJitter: 0
     minInterval: 0.5
@@ -105,7 +105,7 @@ MonoBehaviour:
     minInterval: 0.04
   - id: 15
     clips:
-    - {fileID: 8300000, guid: 314cb099c9d4c9942adbc911efcc60a1, type: 3}
+    - {fileID: 8300000, guid: 807fd6259c29e2b4a968509ea6fb50a2, type: 3}
     volume: 0.8
     pitchJitter: 0
     minInterval: 0.5
@@ -123,11 +123,11 @@ MonoBehaviour:
     minInterval: 0.04
   - id: 18
     clips:
-    - {fileID: 8300000, guid: 47225ab3b47da6444a628277c10009e0, type: 3}
+    - {fileID: 8300000, guid: 755ce1e3e6c08764a81ae8addde437f8, type: 3}
     volume: 0.8
     pitchJitter: 0
     minInterval: 0.5
-  menuMusic: {fileID: 8300000, guid: 915cf7e8cc9177c46ad7bcfe0cfd82e5, type: 3}
+  menuMusic: {fileID: 8300000, guid: 8d54199399407a540b9673bba4d316e3, type: 3}
   defaultZoneMusic: {fileID: 8300000, guid: 206e755318e2c8a49a8de669cd39b012, type: 3}
-  survivalMusic: {fileID: 8300000, guid: c6718257b8d32714d8e02f9f1c23d37a, type: 3}
-  bossMusic: {fileID: 8300000, guid: f8de2888009f402478ef6bd99be6c8ed, type: 3}
+  survivalMusic: {fileID: 8300000, guid: fdcbb12cb7c885f47b3c922f8803c7ac, type: 3}
+  bossMusic: {fileID: 8300000, guid: ff0e0c2fcddc18b479679b450a7d1fc9, type: 3}

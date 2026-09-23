@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Slow Simmer Notes
   description: +15% duration of lingering zones.
   icon: {fileID: 21300000, guid: 4732378e77c4bbb4d9904f10a289cc08, type: 3}
+  rarity: 1
   stat: 16
   valuePerLevel: 0.15
   hasSecondStat: 0

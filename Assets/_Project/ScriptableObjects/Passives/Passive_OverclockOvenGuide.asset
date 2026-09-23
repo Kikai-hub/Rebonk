@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Overclock Oven Guide
   description: +12% attack speed, -5% area.
   icon: {fileID: 21300000, guid: 5e84eb511df024c4f8830c8f021479ae, type: 3}
+  rarity: 2
   stat: 4
   valuePerLevel: 0.12
   hasSecondStat: 1

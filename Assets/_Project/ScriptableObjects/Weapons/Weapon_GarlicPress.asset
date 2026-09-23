@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Garlic Press
   description: Squeezes enemies on both sides.
   icon: {fileID: 21300000, guid: 6899f582db4e1534fb11cd8a3760f80c, type: 3}
+  rarity: 3
   category: 0
   weaponPrefab: {fileID: 3291665192576179988, guid: 2940bec98afc3a2429cba0a8766d0a4d, type: 3}
   unlock:

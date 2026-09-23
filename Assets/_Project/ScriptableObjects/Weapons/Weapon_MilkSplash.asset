@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Milk Splash
   description: Leaves milk puddles under your feet.
   icon: {fileID: 21300000, guid: 74570deca4247c44e998d87f3dc2e64e, type: 3}
+  rarity: 2
   category: 2
   weaponPrefab: {fileID: 6055224127993298935, guid: dd5bc206557799e48a76bbcf33b77e78, type: 3}
   unlock:

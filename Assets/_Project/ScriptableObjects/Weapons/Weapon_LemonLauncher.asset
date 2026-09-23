@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Lemon Launcher
   description: Two zesty seekers.
   icon: {fileID: 21300000, guid: 5a2ca5728c4c7dc429db214210547d61, type: 3}
+  rarity: 2
   category: 1
   weaponPrefab: {fileID: 1019509447982496261, guid: 3946cc0f48966f2448c10a922415cb5e, type: 3}
   unlock:

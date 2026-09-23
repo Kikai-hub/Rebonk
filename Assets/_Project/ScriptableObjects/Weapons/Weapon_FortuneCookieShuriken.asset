@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Fortune Cookie Shuriken
   description: Three cookies that always return.
   icon: {fileID: 21300000, guid: 0f92dacbece9dd24b98aeff211782a84, type: 3}
+  rarity: 2
   category: 1
   weaponPrefab: {fileID: 4431441608150215529, guid: d28fca1d5df43c64ba5592fdc4fad927, type: 3}
   unlock:

@@ -34,6 +34,13 @@ namespace Rebonk.Gameplay
             }
         }
 
+        /// <summary>Every gem lying on the map right now flies to the player. Gems dropped later behave normally.</summary>
+        public static void AttractAll()
+        {
+            foreach (var gem in Active)
+                gem._attracted = true;
+        }
+
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
         private static void ResetStatics() => Active.Clear();
 

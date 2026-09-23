@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Straw Blowpipe
   description: Needle-fast shots that pierce.
   icon: {fileID: 21300000, guid: 7d6554c575c3a134a840a37c63ad6edf, type: 3}
+  rarity: 1
   category: 1
   weaponPrefab: {fileID: 6209095247384883760, guid: 27f76d01f92d85a49a7595ca356e4f9a, type: 3}
   unlock:

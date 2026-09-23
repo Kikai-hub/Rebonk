@@ -56,5 +56,8 @@ namespace Rebonk.Gameplay
         [Tooltip("World-specific difficulty on top of DifficultyConfig.")]
         public float hpMultiplier = 1f;
         public float damageMultiplier = 1f;
+
+        [Tooltip("Cosmetic tier shown on the world-select card (enemies/loot/difficulty rows). 0=easiest, 2=hardest.")]
+        [Range(0, 2)] public int difficultyTier;
     }
 }

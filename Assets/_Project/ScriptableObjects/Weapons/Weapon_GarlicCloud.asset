@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Garlic Cloud
   description: A wide, smelly cloud.
   icon: {fileID: 21300000, guid: 844cd58c75ceaac4997b4955b9031f92, type: 3}
+  rarity: 2
   category: 2
   weaponPrefab: {fileID: 6076648552178093900, guid: 4e8ff8e5cf143b945bae0f3929209720, type: 3}
   unlock:

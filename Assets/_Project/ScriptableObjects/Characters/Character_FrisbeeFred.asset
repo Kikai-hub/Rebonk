@@ -15,13 +15,20 @@ MonoBehaviour:
   displayName: Frisbee Fred
   description: Surfs on a plate. Attacks 18% faster.
   traitName: Quick Return
-  sprite: {fileID: 21300000, guid: cde7c7b54c90a4c498092bb36c1dfafc, type: 3}
+  sprite: {fileID: 21300000, guid: 075ab5608c2ca6e45bf4777d77100ecf, type: 3}
   unlock:
     id: char_frisbee_fred
     unlockedByDefault: 0
     type: 3
     target: 3
     boss: {fileID: 0}
+  framesDown:
+  - {fileID: 21300000, guid: 075ab5608c2ca6e45bf4777d77100ecf, type: 3}
+  framesUp:
+  - {fileID: 21300000, guid: 6029a9fe23762404388e868f8e138895, type: 3}
+  framesSide:
+  - {fileID: 21300000, guid: 313ee5d0ea19278479e308a8deeae9cc, type: 3}
+  animFps: 6
   maxHp: 85
   moveSpeed: 4.7
   damageMultiplier: 1

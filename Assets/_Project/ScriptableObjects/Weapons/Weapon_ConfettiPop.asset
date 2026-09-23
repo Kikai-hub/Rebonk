@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Confetti Pop
   description: Three quick bursts of confetti.
   icon: {fileID: 21300000, guid: 9a6ea0b4c8355d94f93ab61f24807b83, type: 3}
+  rarity: 3
   category: 2
   weaponPrefab: {fileID: 5825246927045084196, guid: 638b6a643a538af41b924051bcf9e4df, type: 3}
   unlock:

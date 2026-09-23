@@ -11,6 +11,8 @@ namespace Rebonk.UI
         [SerializeField] private InfoRow[] rows;
         [SerializeField] private Text resetText;
         [SerializeField] private Text totalText;
+        [Tooltip("One icon per QuestMetric, in enum order (Kills, Zones, Bosses, Evolutions, Survival, Level, Runs).")]
+        [SerializeField] private Sprite[] metricIcons;
 
         private float _nextTick;
 
@@ -43,7 +45,9 @@ namespace Rebonk.UI
             {
                 var quest = DailyQuests.Get(data, i);
                 var done = data.dailyDone[i];
-                rows[i].Bind(Loc.F("Quest {0}", i + 1), quest.Describe(), done ? Loc.T("Done") : quest.ProgressText(data.dailyProgress[i]), done);
+                var m = (int)quest.metric;
+                var iconSprite = metricIcons != null && m < metricIcons.Length ? metricIcons[m] : null;
+                rows[i].Bind(Loc.F("Quest {0}", i + 1), quest.Describe(), done ? Loc.T("Done") : quest.ProgressText(data.dailyProgress[i]), done, iconSprite);
             }
             totalText.text = Loc.F("Quests completed in total: {0}", data.questsCompleted);
             UpdateResetText();

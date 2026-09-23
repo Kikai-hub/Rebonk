@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Returning Ladle
   description: Slow, heavy ladle swing.
   icon: {fileID: 21300000, guid: 06c860834825432408894b8913d8c8d8, type: 3}
+  rarity: 3
   category: 1
   weaponPrefab: {fileID: 2370718556961574475, guid: ad957a1216810a2418eabd405b2da194, type: 3}
   unlock:

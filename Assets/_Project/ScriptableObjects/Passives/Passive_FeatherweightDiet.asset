@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Featherweight Diet
   description: +12% move speed, -6% max HP.
   icon: {fileID: 21300000, guid: 1fa298b48ffd87240882a436caef5325, type: 3}
+  rarity: 2
   stat: 1
   valuePerLevel: 0.12
   hasSecondStat: 1

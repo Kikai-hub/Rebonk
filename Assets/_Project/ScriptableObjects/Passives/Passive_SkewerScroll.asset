@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Skewer Scroll
   description: Projectiles pierce 1 more enemy.
   icon: {fileID: 21300000, guid: bb084e5cebc8333449d9988059dffdd3, type: 3}
+  rarity: 2
   stat: 14
   valuePerLevel: 1
   hasSecondStat: 0

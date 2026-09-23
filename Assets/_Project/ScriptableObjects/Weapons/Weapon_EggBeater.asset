@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Egg Beater
   description: Tiny, furious, unstoppable.
   icon: {fileID: 21300000, guid: 7fae755514644d2449d4f5d6837df837, type: 3}
+  rarity: 2
   category: 0
   weaponPrefab: {fileID: 6439537868044942651, guid: f1881ff93fa6e754f84933302a72028e, type: 3}
   unlock:

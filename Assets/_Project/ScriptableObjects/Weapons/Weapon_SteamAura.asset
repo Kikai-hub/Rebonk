@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Steam Aura
   description: A cloud of scalding steam around you.
   icon: {fileID: 21300000, guid: c83879f9f59dd794fab9dcbc3ea38cfd, type: 3}
+  rarity: 2
   category: 2
   weaponPrefab: {fileID: 993116317921301479, guid: f5b35d6a5c4ca174a914e5fcfeaef357, type: 3}
   unlock:

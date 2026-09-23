@@ -15,7 +15,7 @@ MonoBehaviour:
   displayName: Giant Kitchen
   description: Crumbs, jars and angry toast. Something big is baking...
   previewSprite: {fileID: 21300000, guid: a29ccb59e3ac4a742a8d84038ec4ab12, type: 3}
-  backgroundColor: {r: 0.93, g: 0.87, b: 0.72, a: 1}
+  backgroundColor: {r: 0.7899262, g: 0.7014436, b: 0.60426956, a: 1}
   groundTiles:
   - {fileID: 21300000, guid: 84a69b437cecb124690d92aca78195e6, type: 3}
   - {fileID: 21300000, guid: e140f44c1d0c17c40956ad00439d2fda, type: 3}
@@ -70,10 +70,11 @@ MonoBehaviour:
     weight: 2
     unlockMinute: 4
     groupSize: 1
-  zoneMusic: {fileID: 8300000, guid: 206e755318e2c8a49a8de669cd39b012, type: 3}
+  zoneMusic: {fileID: 8300000, guid: 24ac4e4be1029004996c5e258762f2c7, type: 3}
   survivalMusic: {fileID: 0}
   bossMusic: {fileID: 0}
   bossPrefab: {fileID: 7617523036460671398, guid: c1391685113f6894dbc7fb40fba2f91d, type: 3}
   bossData: {fileID: 11400000, guid: 60bfbd7c16082d34bb5c0d87361dc2fb, type: 2}
   hpMultiplier: 1
   damageMultiplier: 1
+  difficultyTier: 0

@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Meat Tenderizer
   description: One heavy, slow whack.
   icon: {fileID: 21300000, guid: 678dbcb69ffc5a84fb4acc8394c4b526, type: 3}
+  rarity: 1
   category: 0
   weaponPrefab: {fileID: 3853383799994333962, guid: 49d68607d4d3bc946b1046ac9fa5161e, type: 3}
   unlock:

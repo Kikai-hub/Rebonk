@@ -33,10 +33,29 @@ namespace Rebonk.Gameplay
         /// <summary>Raised when an extra life saves the player.</summary>
         public event Action Revived;
 
+        public bool IsSpeedBoosted => Time.time < _boostUntil;
+        public float SpeedBoostSecondsLeft => Mathf.Max(0f, _boostUntil - Time.time);
+
+        /// <summary>Temporary move-speed multiplier. Picking up another boost refreshes the timer instead of stacking.</summary>
+        public void ApplySpeedBoost(float multiplier, float seconds)
+        {
+            _boostMultiplier = Mathf.Max(multiplier, IsSpeedBoosted ? _boostMultiplier : 1f);
+            _boostUntil = Mathf.Max(_boostUntil, Time.time + seconds);
+        }
+
+        private static readonly Color BoostTint = new Color(0.65f, 1f, 1f, 1f);
+
         private float _graceUntil;
+        private float _boostMultiplier = 1f;
+        private float _boostUntil;
+        private bool _boostTinted;
         private float _lastHp;
         private bool _blinking;
         private int _revivesUsed;
+
+        // walk animation: 0 = down (toward camera), 1 = up (away), 2 = side (mirrored for left)
+        private int _animDir = 2;
+        private float _animT;
 
         private void Awake()
         {
@@ -119,6 +138,18 @@ namespace Rebonk.Gameplay
             }
         }
 
+        private void UpdateBoostTint()
+        {
+            var boosted = IsSpeedBoosted;
+            if (body == null || (!boosted && !_boostTinted))
+                return;
+
+            _boostTinted = boosted;
+            // Pulses instead of a steady tint: a constant cyan multiply makes warm-colored heroes look sickly green.
+            var rgb = boosted ? Color.Lerp(Color.white, BoostTint, 0.5f + 0.5f * Mathf.Sin(Time.time * 14f)) : Color.white;
+            body.color = new Color(rgb.r, rgb.g, rgb.b, body.color.a);
+        }
+
         private bool TryRevive(Health health)
         {
             if (RevivesLeft <= 0)
@@ -141,6 +172,8 @@ namespace Rebonk.Gameplay
                 Health.Invulnerable = false;
 
             UpdateBlink();
+            UpdateBoostTint();
+            MinimapModel.Reveal(transform.position);
 
             if (Stats.RegenPerSecond > 0f)
                 Health.Heal(Stats.RegenPerSecond * Time.deltaTime);
@@ -149,13 +182,41 @@ namespace Rebonk.Gameplay
             if (move.sqrMagnitude < 0.0001f)
                 return;
 
-            var next = (Vector2)transform.position + move * (Stats.MoveSpeed * Time.deltaTime);
+            var speed = Stats.MoveSpeed * (IsSpeedBoosted ? _boostMultiplier : 1f);
+            var next = (Vector2)transform.position + move * (speed * Time.deltaTime);
             next = ObstacleMap.Resolve(next, BodyRadius); // slide along solid obstacles
             transform.position = new Vector3(next.x, next.y, transform.position.z);
             Facing = move.normalized;
 
-            if (body != null && Mathf.Abs(move.x) > 0.01f)
-                body.flipX = move.x < 0f;
+            UpdateWalkAnimation(move);
+        }
+
+        /// <summary>Picks down/up/side frames by the dominant movement axis and cycles them; freezes on the last frame when idle.</summary>
+        private void UpdateWalkAnimation(Vector2 move)
+        {
+            if (body == null)
+                return;
+
+            var newDir = Mathf.Abs(move.y) > Mathf.Abs(move.x) ? (move.y > 0f ? 1 : 0) : 2;
+            if (newDir != _animDir)
+            {
+                _animDir = newDir;
+                _animT = 0f;
+            }
+
+            var frames = _animDir == 0 ? baseStats.framesDown : _animDir == 1 ? baseStats.framesUp : baseStats.framesSide;
+            if (frames == null || frames.Length == 0)
+            {
+                body.sprite = baseStats.sprite;
+            }
+            else
+            {
+                _animT += Time.deltaTime * Mathf.Max(0.01f, baseStats.animFps);
+                body.sprite = frames[Mathf.FloorToInt(_animT) % frames.Length];
+            }
+
+            // Down/up frames are drawn facing the camera (no mirroring); side frames are drawn facing right.
+            body.flipX = _animDir == 2 && move.x < 0f;
         }
     }
 }

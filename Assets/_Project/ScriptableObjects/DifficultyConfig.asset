@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: DifficultyConfig
   m_EditorClassIdentifier: Rebonk.Gameplay::Rebonk.Gameplay.DifficultyConfig
   hpPerMinute: 0.2
-  damagePerMinute: 0.08
+  damagePerMinute: 0.1
   speedPerMinute: 0.03
   maxSpeedMultiplier: 1.8
-  perZone: 0.35
+  perZone: 0.4
   startSpawnInterval: 0.8
   minSpawnInterval: 0.2
   spawnRampMinutes: 10

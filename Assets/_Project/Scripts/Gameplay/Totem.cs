@@ -16,6 +16,8 @@ namespace Rebonk.Gameplay
         public static readonly List<Totem> All = new List<Totem>(24);
 
         [SerializeField] private SpriteRenderer body;
+        [Tooltip("Shown after activation. If empty, the body is tinted grey instead.")]
+        [SerializeField] private Sprite usedSprite;
         [Tooltip("Ring sprite (radius 1 world unit at scale 1) showing the activation area and charge progress.")]
         [SerializeField] private SpriteRenderer ring;
         [SerializeField] private float activateRadius = 3.2f;
@@ -90,7 +92,12 @@ namespace Rebonk.Gameplay
         {
             _done = true;
             if (body != null)
-                body.color = new Color(0.45f, 0.45f, 0.5f, 1f);
+            {
+                if (usedSprite != null)
+                    body.sprite = usedSprite;
+                else
+                    body.color = new Color(0.45f, 0.45f, 0.5f, 1f);
+            }
             if (ring != null)
                 ring.enabled = false;
 

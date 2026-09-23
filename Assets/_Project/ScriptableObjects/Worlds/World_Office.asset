@@ -15,7 +15,7 @@ MonoBehaviour:
   displayName: Office Hell
   description: Endless meetings. This could have been an email.
   previewSprite: {fileID: 21300000, guid: 15f246db9b323a44a8642b62693948f7, type: 3}
-  backgroundColor: {r: 0.34, g: 0.4, b: 0.55, a: 1}
+  backgroundColor: {r: 0.3303462, g: 0.38691792, b: 0.46394765, a: 1}
   groundTiles:
   - {fileID: 21300000, guid: 4794ae8d7cb96f748ab9527348567a22, type: 3}
   - {fileID: 21300000, guid: 84da9a12075bd764ba017430f815b51e, type: 3}
@@ -25,7 +25,31 @@ MonoBehaviour:
   patchNoiseScale: 0.06
   obstacles:
   - sprite: {fileID: 21300000, guid: f1d31b87d02bad2479bf3811123e3c74, type: 3}
-    weight: 3
+    weight: 0.42857143
+    collisionRadius: 1
+    scale: 1
+  - sprite: {fileID: 21300000, guid: 053c3a3df164e5d4ebe1e8addc5dd2ba, type: 3}
+    weight: 0.42857143
+    collisionRadius: 1
+    scale: 1
+  - sprite: {fileID: 21300000, guid: 520d1df427eddda458f0eabd97c53511, type: 3}
+    weight: 0.42857143
+    collisionRadius: 1
+    scale: 1
+  - sprite: {fileID: 21300000, guid: b461839ce192980459f84dd447008335, type: 3}
+    weight: 0.42857143
+    collisionRadius: 1
+    scale: 1
+  - sprite: {fileID: 21300000, guid: fae0f6f8ba61ac040bbfaa2f8502360f, type: 3}
+    weight: 0.42857143
+    collisionRadius: 1
+    scale: 1
+  - sprite: {fileID: 21300000, guid: 7983810f88f886649aa27db2ec7a406a, type: 3}
+    weight: 0.42857143
+    collisionRadius: 1
+    scale: 1
+  - sprite: {fileID: 21300000, guid: ab5916d970e60e847ade15446db054f3, type: 3}
+    weight: 0.42857143
     collisionRadius: 1
     scale: 1
   - sprite: {fileID: 21300000, guid: be2ff3359b870ed4990e76b5b80a2ac9, type: 3}
@@ -33,7 +57,27 @@ MonoBehaviour:
     collisionRadius: 0.6
     scale: 1
   - sprite: {fileID: 21300000, guid: cff3d335acfd80e40a424a1074f0413d, type: 3}
-    weight: 2
+    weight: 0.33333334
+    collisionRadius: 0.8
+    scale: 1
+  - sprite: {fileID: 21300000, guid: 64f676ca9c1c3be4f991d77653c6492b, type: 3}
+    weight: 0.33333334
+    collisionRadius: 0.8
+    scale: 1
+  - sprite: {fileID: 21300000, guid: c02b2a879d9fe5746b5d06dbef973be4, type: 3}
+    weight: 0.33333334
+    collisionRadius: 0.8
+    scale: 1
+  - sprite: {fileID: 21300000, guid: a9fa2624614504743ba6f61a30adfc15, type: 3}
+    weight: 0.33333334
+    collisionRadius: 0.8
+    scale: 1
+  - sprite: {fileID: 21300000, guid: 43804f0ce9094db429970ea12357d571, type: 3}
+    weight: 0.33333334
+    collisionRadius: 0.8
+    scale: 1
+  - sprite: {fileID: 21300000, guid: 95ae6b70540c1d446aff4e8dd77c2a52, type: 3}
+    weight: 0.33333334
     collisionRadius: 0.8
     scale: 1
   obstacleAttemptsPerChunk: 14
@@ -74,10 +118,11 @@ MonoBehaviour:
     weight: 2
     unlockMinute: 4
     groupSize: 1
-  zoneMusic: {fileID: 8300000, guid: c829a75466a61da4ea33700a68d2e497, type: 3}
+  zoneMusic: {fileID: 8300000, guid: a5ad9bcd993d1f647bd0d5146bc53505, type: 3}
   survivalMusic: {fileID: 0}
   bossMusic: {fileID: 0}
   bossPrefab: {fileID: 7617523036460671398, guid: 16eb4629ece7b50419166b0e32c78d32, type: 3}
   bossData: {fileID: 11400000, guid: e930653d7b6a6a34d873e999ef6f19c4, type: 2}
   hpMultiplier: 1
   damageMultiplier: 1.1
+  difficultyTier: 2

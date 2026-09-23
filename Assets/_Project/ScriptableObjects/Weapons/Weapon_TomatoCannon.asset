@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Tomato Cannon
   description: Slow, heavy tomato. Splat!
   icon: {fileID: 21300000, guid: b5854cbee14e2f642874c4e7f8bbd410, type: 3}
+  rarity: 2
   category: 1
   weaponPrefab: {fileID: 5619693180006854919, guid: cf30cb6fba83bdb4189bf8866169935b, type: 3}
   unlock:

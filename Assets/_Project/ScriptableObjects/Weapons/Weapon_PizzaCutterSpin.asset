@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Pizza Cutter Spin
   description: Slices everything in a circle.
   icon: {fileID: 21300000, guid: 5cc25c67cab22464691c2e0faf86ae98, type: 3}
+  rarity: 2
   category: 0
   weaponPrefab: {fileID: 6348887756428329572, guid: df20d587627dd3743b91a546b45e94d4, type: 3}
   unlock:

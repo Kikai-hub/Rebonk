@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Sausage Rocket
   description: Slow, heavy, punches through.
   icon: {fileID: 21300000, guid: c3a6ddd777e618e48952c47347479b8b, type: 3}
+  rarity: 3
   category: 1
   weaponPrefab: {fileID: 8065243841958970920, guid: 4b60a0dc37a02e94cb89781835fbe213, type: 3}
   unlock:

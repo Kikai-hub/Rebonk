@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Cleaver Chop
   description: Slow. Very chunky.
   icon: {fileID: 21300000, guid: 9080b00a1bcb6f540a825b5886a7efda, type: 3}
+  rarity: 2
   category: 0
   weaponPrefab: {fileID: 53009890138460521, guid: 4e04243bd8a099841821b24609a31a6d, type: 3}
   unlock:

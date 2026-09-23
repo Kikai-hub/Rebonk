@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Jelly Bean Blaster
   description: Ricochets like crazy.
   icon: {fileID: 21300000, guid: a99cfbb54fdc8624e97e1105756f5366, type: 3}
+  rarity: 3
   category: 1
   weaponPrefab: {fileID: 3699076020143779688, guid: 61c1a3ccbd9c8044cb1de411306cfe4a, type: 3}
   unlock:

@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Chopsticks
   description: A long, thin poke.
   icon: {fileID: 21300000, guid: caf71d83f4c285f4992d535bc35e48a4, type: 3}
+  rarity: 1
   category: 0
   weaponPrefab: {fileID: 7338753036527751681, guid: 5710bc363abdde54b843d635a2f7ee87, type: 3}
   unlock:

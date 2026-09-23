@@ -15,6 +15,11 @@ namespace Rebonk.UI
         [SerializeField] private Button resetButton;
         [SerializeField] private Text resetLabel;
         [SerializeField] private float confirmSeconds = 3f;
+        [Header("Selected language look (empty sprites = old flat color tint)")]
+        [SerializeField] private Sprite languageOnSprite;
+        [SerializeField] private Sprite languageOffSprite;
+        [SerializeField] private Color languageOnText = new Color(1f, 0.85f, 0.3f, 1f);
+        [SerializeField] private Color languageOffText = Color.white;
 
         private static readonly Color On = new Color(0.3f, 0.55f, 0.4f, 1f);
         private static readonly Color Off = new Color(0.3f, 0.3f, 0.45f, 1f);
@@ -62,7 +67,25 @@ namespace Rebonk.UI
         private void Refresh()
         {
             for (var i = 0; i < languageButtons.Length; i++)
-                languageButtons[i].targetGraphic.color = i == (int)Loc.Current ? On : Off;
+            {
+                var on = i == (int)Loc.Current;
+                var button = languageButtons[i];
+                if (languageOnSprite != null && button.targetGraphic is Image image)
+                {
+                    image.sprite = on ? languageOnSprite : languageOffSprite;
+                    image.color = Color.white;
+                    button.GetComponentInChildren<Text>().color = on ? languageOnText : languageOffText;
+                }
+                else
+                {
+                    button.targetGraphic.color = on ? On : Off;
+                }
+
+                // Optional "Selected" child (e.g. gold diamonds on both sides) shown only on the active language.
+                var marker = button.transform.Find("Selected");
+                if (marker != null)
+                    marker.gameObject.SetActive(on);
+            }
             resetLabel.text = Loc.T(_confirmUntil > 0f ? "TAP AGAIN TO ERASE" : "RESET PROGRESS");
         }
 

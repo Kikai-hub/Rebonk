@@ -15,13 +15,20 @@ MonoBehaviour:
   displayName: Ketchup Kid
   description: 'Makes a mess of everything: +20% damage.'
   traitName: Messy Eater
-  sprite: {fileID: 21300000, guid: 3a304be4ccd0d8345af5a23ca4b73de7, type: 3}
+  sprite: {fileID: 21300000, guid: ed88ace7bbe6ad744a32badde6850aed, type: 3}
   unlock:
     id: char_ketchup_kid
     unlockedByDefault: 0
     type: 0
     target: 2000
     boss: {fileID: 0}
+  framesDown:
+  - {fileID: 21300000, guid: ed88ace7bbe6ad744a32badde6850aed, type: 3}
+  framesUp:
+  - {fileID: 21300000, guid: 1c84c68512d204a428a95d5e333fd25c, type: 3}
+  framesSide:
+  - {fileID: 21300000, guid: 4cacb2d9896d34e4cb89bfdb1e62945a, type: 3}
+  animFps: 6
   maxHp: 90
   moveSpeed: 4
   damageMultiplier: 1.2

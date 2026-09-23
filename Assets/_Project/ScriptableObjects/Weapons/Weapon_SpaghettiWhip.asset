@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Spaghetti Whip
   description: A wide lash of noodles.
   icon: {fileID: 21300000, guid: 6d28907b3fb09fd49848c3130e1ada56, type: 3}
+  rarity: 3
   category: 0
   weaponPrefab: {fileID: 7661354023736528750, guid: 28ddb2e47e0697f4ca755ce1f6db12b8, type: 3}
   unlock:

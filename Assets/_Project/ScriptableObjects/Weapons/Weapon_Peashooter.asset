@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Peashooter
   description: Rapid green peas.
   icon: {fileID: 21300000, guid: 861082a4c3d72b548b2043e5b707c738, type: 3}
+  rarity: 1
   category: 1
   weaponPrefab: {fileID: 3553372355358261168, guid: 414e739678b960c459b775f90c4b8b3f, type: 3}
   unlock:

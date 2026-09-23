@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Rolling Pin
   description: Spins all the way around you.
   icon: {fileID: 21300000, guid: 73968ef5a92ceff48b688777adf0e651, type: 3}
+  rarity: 1
   category: 0
   weaponPrefab: {fileID: 6838928434935166363, guid: ab3119b387a596446bc2dd926e9be4d1, type: 3}
   unlock:

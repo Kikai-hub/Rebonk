@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Chef's Kiss Handbook
   description: Critical hits deal 20% more damage.
   icon: {fileID: 21300000, guid: bc9a90047483a2a4ba237ec30a1f712d, type: 3}
+  rarity: 1
   stat: 11
   valuePerLevel: 0.2
   hasSecondStat: 0

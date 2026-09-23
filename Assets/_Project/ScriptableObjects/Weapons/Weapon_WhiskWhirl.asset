@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Whisk Whirl
   description: A blur of whisking all around you.
   icon: {fileID: 21300000, guid: 59d8f217da37acb44a57aa6484d921fc, type: 3}
+  rarity: 1
   category: 0
   weaponPrefab: {fileID: 4705002979443229754, guid: c2f640b1c3cf91645933a7b2f8e0081b, type: 3}
   unlock:

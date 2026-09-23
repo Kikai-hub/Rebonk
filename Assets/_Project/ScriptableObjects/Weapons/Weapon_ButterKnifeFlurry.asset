@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Butter Knife Flurry
   description: Countless tiny stabs.
   icon: {fileID: 21300000, guid: 31a672da0f30be443a270e7a7f97faf1, type: 3}
+  rarity: 1
   category: 0
   weaponPrefab: {fileID: 8843814863232812149, guid: 2da3299f9733b7443a535fea4c51d013, type: 3}
   unlock:

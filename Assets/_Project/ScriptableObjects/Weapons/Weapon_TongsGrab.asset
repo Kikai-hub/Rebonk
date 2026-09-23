@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Tongs Grab
   description: Pinches whatever is in reach.
   icon: {fileID: 21300000, guid: e3e9b4f9fd2b9dc42b75b60956eabf73, type: 3}
+  rarity: 1
   category: 0
   weaponPrefab: {fileID: 459935341102356153, guid: f2bdec3da5b161b47889f942ec95ef05, type: 3}
   unlock:

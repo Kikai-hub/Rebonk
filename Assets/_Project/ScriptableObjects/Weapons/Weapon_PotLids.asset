@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Pot Lids
   description: Big lids orbit you like a shield.
   icon: {fileID: 21300000, guid: 9a3939eb9b85c474397f2ede40ad22aa, type: 3}
+  rarity: 2
   category: 2
   weaponPrefab: {fileID: 4490239222984449477, guid: 3a8b91da515fc5140b346dda73c0fda6, type: 3}
   unlock:

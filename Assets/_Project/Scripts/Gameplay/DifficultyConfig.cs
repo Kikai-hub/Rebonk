@@ -14,7 +14,7 @@ namespace Rebonk.Gameplay
 
     /// <summary>
     /// Every difficulty coefficient in one asset, for balancing without touching code.
-    /// Stats:  multiplier = (1 + ratePerMinute * runMinutes) * (1 + perZone * (zoneLevel - 1)).
+    /// Stats:  multiplier = (1 + rate * minutes + quadratic * minutes^2) * (1 + perZone) ^ (zoneLevel - 1).
     /// Spawns: interval shrinks linearly to a floor; batch size and alive cap grow per minute.
     /// </summary>
     [CreateAssetMenu(menuName = "Rebonk/Difficulty Config", fileName = "DifficultyConfig")]
@@ -22,13 +22,16 @@ namespace Rebonk.Gameplay
     {
         [Header("Enemy stats per minute of run time (linear)")]
         public float hpPerMinute = 0.20f;
-        public float damagePerMinute = 0.08f;
+        public float damagePerMinute = 0.10f;
         public float speedPerMinute = 0.03f;
+        [Tooltip("Extra growth that speeds up over time: adds this x minutes^2 to the multiplier, so long runs stay dangerous however strong the player is.")]
+        public float hpQuadraticPerMinute = 0.015f;
+        public float damageQuadraticPerMinute = 0.008f;
         [Tooltip("Speed scaling stops here so late enemies cannot outrun the player.")]
         public float maxSpeedMultiplier = 1.8f;
 
-        [Header("Extra scaling per zone after the first")]
-        public float perZone = 0.35f;
+        [Header("Extra scaling per zone after the first (compounds: 0.4 = x1.4 per zone)")]
+        public float perZone = 0.4f;
 
         [Header("Spawn rate")]
         public float startSpawnInterval = 0.5f;
@@ -45,11 +48,11 @@ namespace Rebonk.Gameplay
 
         public EnemyScale EvaluateScale(float minutes, int zoneLevel)
         {
-            var zone = 1f + perZone * Mathf.Max(0, zoneLevel - 1);
+            var zone = Mathf.Pow(1f + perZone, Mathf.Max(0, zoneLevel - 1));
             return new EnemyScale
             {
-                Hp = (1f + hpPerMinute * minutes) * zone,
-                Damage = (1f + damagePerMinute * minutes) * zone,
+                Hp = (1f + hpPerMinute * minutes + hpQuadraticPerMinute * minutes * minutes) * zone,
+                Damage = (1f + damagePerMinute * minutes + damageQuadraticPerMinute * minutes * minutes) * zone,
                 Speed = Mathf.Min(1f + speedPerMinute * minutes, maxSpeedMultiplier)
             };
         }

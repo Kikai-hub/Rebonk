@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Fork Tornado
   description: A whirlwind of tiny forks.
   icon: {fileID: 21300000, guid: 3ee8c8dc3a6f8f4419561a6618d2207f, type: 3}
+  rarity: 3
   category: 2
   weaponPrefab: {fileID: 4871457335835630820, guid: de4b5df2c17c9d0478b1f4ac9d7e1787, type: 3}
   unlock:

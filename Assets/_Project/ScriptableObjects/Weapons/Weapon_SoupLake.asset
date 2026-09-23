@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Soup Lake
   description: 'EVOLVED Soup Puddle: giant scalding lakes.'
   icon: {fileID: 21300000, guid: a018907bfc161e8449f5bb19d792b056, type: 3}
+  rarity: 3
   category: 0
   weaponPrefab: {fileID: 1720472010391407193, guid: bd40544b790ab864ea03eabad1cc90d7, type: 3}
   unlock:

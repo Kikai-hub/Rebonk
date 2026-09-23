@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Vitality Tome
   description: +20 max HP.
   icon: {fileID: 21300000, guid: e432067c627107d48b42cd0e83a775be, type: 3}
+  rarity: 1
   stat: 5
   valuePerLevel: 20
   hasSecondStat: 0

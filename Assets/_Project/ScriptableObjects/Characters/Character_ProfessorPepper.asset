@@ -15,13 +15,20 @@ MonoBehaviour:
   displayName: Professor Pepper
   description: Science! Every passive item is 30% stronger.
   traitName: Lab Coat
-  sprite: {fileID: 21300000, guid: 51e8e5bb856c2bb45b42ae0521305271, type: 3}
+  sprite: {fileID: 21300000, guid: 3612af08c1b07384bbbee851ade6b82c, type: 3}
   unlock:
     id: char_professor_pepper
     unlockedByDefault: 0
     type: 2
     target: 1000
     boss: {fileID: 0}
+  framesDown:
+  - {fileID: 21300000, guid: 3612af08c1b07384bbbee851ade6b82c, type: 3}
+  framesUp:
+  - {fileID: 21300000, guid: f4632d4826ae242438d7c5800043d725, type: 3}
+  framesSide:
+  - {fileID: 21300000, guid: 9fd87ab8b78daa44081bb81afeb883a0, type: 3}
+  animFps: 6
   maxHp: 100
   moveSpeed: 4
   damageMultiplier: 1

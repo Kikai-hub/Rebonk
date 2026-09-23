@@ -107,7 +107,7 @@ namespace Rebonk.Gameplay
                 var dir = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle));
 
                 var spirit = _pool.Get();
-                spirit.transform.position = center + dir * radius;
+                spirit.transform.position = ObstacleMap.ArenaSpawnPoint(center, center + dir * radius);
                 spirit.Init(spiritData, _pool.Release, hpMultiplier);
             }
         }

@@ -29,6 +29,13 @@ namespace Rebonk.Gameplay
         [Tooltip("Needs a material using the Rebonk/Sprite-Lit-Flash shader (flash is driven by the sprite color alpha).")]
         [SerializeField] private float flashDuration = 0.1f;
         [SerializeField, Range(0f, 1f)] private float flashStrength = 0.65f;
+        [Header("Directional sprites (optional; empty = keep the single static sprite already on this prefab)")]
+        [Tooltip("Facing the camera, moving toward the player.")]
+        [SerializeField] private Sprite spriteDown;
+        [Tooltip("Facing away from the camera, moving away from the player.")]
+        [SerializeField] private Sprite spriteUp;
+        [Tooltip("Facing right; mirrored for left via the flip below. No animation, just a turn.")]
+        [SerializeField] private Sprite spriteSide;
 
         private EnemyData _data;
         private Action<Enemy> _release;
@@ -50,6 +57,20 @@ namespace Rebonk.Gameplay
         public EnemyData Data => _data;
         public EnemyScale Scale => _scale;
         public int XpValue => _data != null ? _data.xpValue : 0;
+        public bool IsBoss => _data != null && _data.behavior == EnemyBehavior.Boss;
+
+        /// <summary>Kills every regular enemy (bosses are skipped). Counts as real kills: XP drops, kill stats.</summary>
+        public static void KillAllExceptBosses()
+        {
+            for (var i = Active.Count - 1; i >= 0; i--)
+            {
+                if (i >= Active.Count)
+                    continue;
+                var e = Active[i];
+                if (!e.IsBoss && !e.Health.IsDead)
+                    e.Health.TakeDamage(e.Health.Current + 1f);
+            }
+        }
 
         private void Awake()
         {
@@ -162,8 +183,7 @@ namespace Rebonk.Gameplay
                 default: Move(dir * speed); break;
             }
 
-            if (body != null && Mathf.Abs(dir.x) > 0.01f && _charge != ChargeState.Windup)
-                body.flipX = dir.x < 0f;
+            UpdateFacing(dir);
 
             if (sqrDist <= _data.contactRadius * _data.contactRadius && Time.time >= _nextContactTime)
             {
@@ -174,6 +194,27 @@ namespace Rebonk.Gameplay
         }
 
         private void Move(Vector2 velocity) => transform.position += (Vector3)(velocity * Time.deltaTime);
+
+        /// <summary>Turns to face <paramref name="dir"/>: picks the down/up/side sprite (no animation), mirrored for left.
+        /// No-op (besides the flip) until the directional sprites are drawn; frozen during the charge windup telegraph.</summary>
+        private void UpdateFacing(Vector2 dir)
+        {
+            if (body == null || _charge == ChargeState.Windup)
+                return;
+
+            if (spriteDown != null || spriteUp != null || spriteSide != null)
+            {
+                var vertical = Mathf.Abs(dir.y) > Mathf.Abs(dir.x);
+                var sprite = vertical ? (dir.y > 0f ? spriteUp : spriteDown) : spriteSide;
+                if (sprite != null)
+                    body.sprite = sprite;
+                body.flipX = !vertical && dir.x < 0f;
+            }
+            else if (Mathf.Abs(dir.x) > 0.01f)
+            {
+                body.flipX = dir.x < 0f;
+            }
+        }
 
         private void UpdateRanged(Vector2 pos, Vector2 dir, float dist, float speed)
         {

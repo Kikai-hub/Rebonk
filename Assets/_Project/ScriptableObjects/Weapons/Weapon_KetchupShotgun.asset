@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Ketchup Shotgun
   description: Blasts a splat of ketchup up close.
   icon: {fileID: 21300000, guid: 0e9df03edef5c4b45a78cc803ae265fd, type: 3}
+  rarity: 1
   category: 1
   weaponPrefab: {fileID: 8173587009248003554, guid: 81b95d74900b82d4a98cfff51951b359, type: 3}
   unlock:

@@ -15,7 +15,7 @@ MonoBehaviour:
   displayName: Joke Graveyard
   description: The dead are not laughing. Dodge the punchlines.
   previewSprite: {fileID: 21300000, guid: de72dcde3e1c998448a3a1fca2621ff0, type: 3}
-  backgroundColor: {r: 0.2, g: 0.3, b: 0.2, a: 1}
+  backgroundColor: {r: 0.2907935, g: 0.24790137, b: 0.17695314, a: 1}
   groundTiles:
   - {fileID: 21300000, guid: 0e4d1242bb154814f9618d45e4e0790c, type: 3}
   - {fileID: 21300000, guid: 464f5ddf50346664ebedf10f015bdb17, type: 3}
@@ -70,10 +70,11 @@ MonoBehaviour:
     weight: 2
     unlockMinute: 3.5
     groupSize: 1
-  zoneMusic: {fileID: 8300000, guid: 1e228481103934d4dbbf0c02b2885ab8, type: 3}
+  zoneMusic: {fileID: 8300000, guid: e8617dc51ef7aaa4b86fac92c3612968, type: 3}
   survivalMusic: {fileID: 0}
   bossMusic: {fileID: 0}
   bossPrefab: {fileID: 7617523036460671398, guid: 35d3982d90f1777439daa812a12ef3c2, type: 3}
   bossData: {fileID: 11400000, guid: 93cc55b41be837b45aa9c365bf84a553, type: 2}
   hpMultiplier: 1.1
   damageMultiplier: 1
+  difficultyTier: 1

@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Cheese Wheel Roll
   description: A huge wheel rolling through the crowd.
   icon: {fileID: 21300000, guid: 73618bfcb9115744980516c93479ec40, type: 3}
+  rarity: 3
   category: 1
   weaponPrefab: {fileID: 4358347607816414660, guid: 2e697f2f7c228b34fa437e8f7b4fda8b, type: 3}
   unlock:

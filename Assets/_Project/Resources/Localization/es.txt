@@ -443,3 +443,47 @@ Long Haul=>Largo recorrido
 Dedicated=>Dedicado
 Daily Habit=>Hábito diario
 Quest Master=>Maestro de misiones
+
+# Endless upgrades
+Endless upgrade: +{0}% damage and a little more area=>Mejora infinita: +{0}% de daño y un poco más de área
+Endless upgrade: the bonus keeps growing.=>Mejora infinita: la bonificación sigue creciendo.
+
+# Stage: minimap
+MAP=>MAPA
+
+# Stage: characters screen redesign
+Unlocked {0} / {1}=>Desbloqueados {0} / {1}
+EQUIPPED=>EQUIPADO
+Random weapon=>Arma aleatoria
+HEALTH=>SALUD
+SPEED=>VELOCIDAD
+DAMAGE=>DAÑO
+ATTACK SPEED=>VELOCIDAD DE ATAQUE
+AREA=>ÁREA
+TRAIT=>RASGO
+STARTING WEAPON=>ARMA INICIAL
+Choose your hero=>Elige a tu héroe
+PASSIVE=>PASIVOS
+Weapons & Items=>Armas y objetos
+Common=>Común
+Rare=>Raro
+Epic=>Épico
+Legendary=>Legendario
+Quality=>Calidad
+Passive item=>Objeto pasivo
+Per level=>Por nivel
+Max level=>Nivel máx.
+Always available=>Siempre disponible
+Each world — new dangers, enemies and rewards.=>Cada mundo — nuevos peligros, enemigos y recompensas.
+ENEMIES=>ENEMIGOS
+LOOT=>BOTÍN
+DIFFICULTY=>DIFICULTAD
+Mild=>Débiles
+Moderate=>Moderados
+Fierce=>Feroces
+Standard=>Estándar
+Good=>Bueno
+Scarce=>Escaso
+Easy=>Fácil
+Balanced=>Equilibrada
+Brutal=>Brutal

@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Sprinkle Shower
   description: Colorful sprinkles rain down around you.
   icon: {fileID: 21300000, guid: f42229ee89aa6ca46a8b9ef577976371, type: 3}
+  rarity: 1
   category: 2
   weaponPrefab: {fileID: 3442003747229878445, guid: dba59489601f9f74a8ea198cef3851ec, type: 3}
   unlock:

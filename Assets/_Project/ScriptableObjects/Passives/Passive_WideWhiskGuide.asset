@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Wide Whisk Guide
   description: +10% weapon area.
   icon: {fileID: 21300000, guid: 49a5e2ab7552142469c38fa466778b33, type: 3}
+  rarity: 1
   stat: 12
   valuePerLevel: 0.1
   hasSecondStat: 0

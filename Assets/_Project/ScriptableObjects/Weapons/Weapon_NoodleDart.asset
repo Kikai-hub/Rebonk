@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Noodle Dart
   description: Bounces between enemies.
   icon: {fileID: 21300000, guid: b621046526c2c524c8581d8c6ca60cc5, type: 3}
+  rarity: 2
   category: 1
   weaponPrefab: {fileID: 4213260449489186435, guid: f82829ab183466546bf4814b5b410c92, type: 3}
   unlock:

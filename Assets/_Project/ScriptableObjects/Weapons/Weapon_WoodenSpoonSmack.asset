@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Wooden Spoon Smack
   description: Grandma's favorite argument.
   icon: {fileID: 21300000, guid: 41be499b80a647a438a1ab859a5a352d, type: 3}
+  rarity: 1
   category: 0
   weaponPrefab: {fileID: 7882251919614593871, guid: 3471859de3768dd4ca77f81744797c65, type: 3}
   unlock:

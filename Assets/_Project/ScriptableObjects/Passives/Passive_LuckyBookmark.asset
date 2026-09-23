@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Lucky Bookmark
   description: One more card to choose from on level-up.
   icon: {fileID: 21300000, guid: fd12dc09c05a37948a04007e436ab4a4, type: 3}
+  rarity: 3
   stat: 19
   valuePerLevel: 1
   hasSecondStat: 0

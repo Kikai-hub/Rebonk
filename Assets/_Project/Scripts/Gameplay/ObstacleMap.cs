@@ -26,6 +26,29 @@ namespace Rebonk.Gameplay
 
         public static void Clear() => Chunks.Clear();
 
+        /// <summary>Half-size of the square play area around the start (0 = endless map).</summary>
+        public static float ArenaHalfSize { get; set; }
+
+        public static bool InArena(Vector2 p, float margin = 0f) =>
+            ArenaHalfSize <= 0f || (Mathf.Abs(p.x) <= ArenaHalfSize - margin && Mathf.Abs(p.y) <= ArenaHalfSize - margin);
+
+        public static Vector2 ClampToArena(Vector2 p, float margin)
+        {
+            if (ArenaHalfSize <= 0f)
+                return p;
+            var limit = ArenaHalfSize - margin;
+            return new Vector2(Mathf.Clamp(p.x, -limit, limit), Mathf.Clamp(p.y, -limit, limit));
+        }
+
+        /// <summary>A spawn spot outside the arena is mirrored to the opposite side of the player (still off screen), or clamped as a last resort.</summary>
+        public static Vector2 ArenaSpawnPoint(Vector2 center, Vector2 spot)
+        {
+            if (InArena(spot, 0.5f))
+                return spot;
+            var mirrored = center - (spot - center);
+            return InArena(mirrored, 0.5f) ? mirrored : ClampToArena(spot, 0.5f);
+        }
+
         /// <summary>Pushes <paramref name="position"/> out of every overlapping obstacle so the mover slides along them.</summary>
         public static Vector2 Resolve(Vector2 position, float radius)
         {
@@ -57,7 +80,7 @@ namespace Rebonk.Gameplay
                 }
             }
 
-            return position;
+            return ClampToArena(position, radius);
         }
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
@@ -65,6 +88,7 @@ namespace Rebonk.Gameplay
         {
             Chunks.Clear();
             _chunkSize = 16;
+            ArenaHalfSize = 0f;
         }
     }
 }

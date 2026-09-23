@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 9048b9b6dc772764791f28c523621112, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c680c60083a2f1c42b64e21d41b42956, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -106,6 +106,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 164c9a571be26fa419edfdc1bc98b6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Rebonk.Core::Rebonk.Core.Health
+  FlatReduction: 0
+  DodgeChance: 0
+  Invulnerable: 0
 --- !u!114 &1045181546506405453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,3 +124,6 @@ MonoBehaviour:
   body: {fileID: 1294185204234326033}
   flashDuration: 0.1
   flashStrength: 0.65
+  spriteDown: {fileID: 21300000, guid: c680c60083a2f1c42b64e21d41b42956, type: 3}
+  spriteUp: {fileID: 21300000, guid: 76a2724b105eb7c498254a67850857e9, type: 3}
+  spriteSide: {fileID: 21300000, guid: 7052d333363de9b40a5d00726313f9ad, type: 3}

@@ -15,6 +15,7 @@ MonoBehaviour:
   displayName: Ice Cream Scoop
   description: Scoops a big piece out of a group.
   icon: {fileID: 21300000, guid: 414dce8b500ec1449b6365cad2d3e5bf, type: 3}
+  rarity: 2
   category: 0
   weaponPrefab: {fileID: 909369625309365771, guid: 26536832c62a0424faa76f177023814b, type: 3}
   unlock:

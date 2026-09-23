@@ -1,0 +1,20 @@
+<en-US>
+Update 2.0
+- New art for all 20 heroes, all enemies and bosses of the 3 worlds, maps and props
+- Redesigned menus: heroes, collection, world select, settings, quests, achievements
+- Rare drops: magnet, speed boost and hot egg
+- Defeating a boss wipes out all enemies and pulls in every XP gem
+- Minimap with fog of war, more compact arena
+- New soundtrack: menu, each world, boss fights and the spirit phase
+- New loading screen
+</en-US>
+<ru-RU>
+Обновление 2.0
+- Новый арт: все 20 героев, враги и боссы трёх миров, карты и декор
+- Новые меню: герои, коллекция, выбор мира, настройки, задания, достижения
+- Редкий дроп: магнит, ускорение и горячее яйцо
+- После победы над боссом гибнут все враги, а опыт летит к игроку
+- Миникарта с туманом войны, арена стала компактнее
+- Новая музыка: меню, каждый мир, битвы с боссами и фаза духов
+- Новый экран загрузки
+</ru-RU>

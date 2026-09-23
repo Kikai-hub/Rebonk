@@ -15,13 +15,20 @@ MonoBehaviour:
   displayName: Chef Chad
   description: Slices through everything. Hits a bit harder.
   traitName: Sharp Knives
-  sprite: {fileID: 21300000, guid: 3808fb260af5b394eb82d4bb1d829adf, type: 3}
+  sprite: {fileID: 21300000, guid: 923ee9b74b755244e9dc00002fb07507, type: 3}
   unlock:
     id: char_chef_chad
     unlockedByDefault: 0
     type: 2
     target: 250
     boss: {fileID: 0}
+  framesDown:
+  - {fileID: 21300000, guid: 923ee9b74b755244e9dc00002fb07507, type: 3}
+  framesUp:
+  - {fileID: 21300000, guid: b39b1fc2ffefef244a10cbe86ea387b6, type: 3}
+  framesSide:
+  - {fileID: 21300000, guid: 387a70d6473beaa44aba1b2c86a26e26, type: 3}
+  animFps: 6
   maxHp: 90
   moveSpeed: 4
   damageMultiplier: 1.15
